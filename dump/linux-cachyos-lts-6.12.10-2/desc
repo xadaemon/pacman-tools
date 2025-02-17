@@ -1,0 +1,73 @@
+%FILENAME%
+linux-cachyos-lts-6.12.10-2-x86_64.pkg.tar.zst
+
+%NAME%
+linux-cachyos-lts
+
+%BASE%
+linux-cachyos-lts
+
+%VERSION%
+6.12.10-2
+
+%DESC%
+The Linux BORE + Cachy Sauce Kernel by CachyOS with other patches and improvements - Long Term Service kernel and modules
+
+%CSIZE%
+150061234
+
+%ISIZE%
+150294604
+
+%SHA256SUM%
+786067916230a128d25f50cb2a6284b164e7ae1d4c632023e7bbbd03097cf9be
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmecgaoACgkQ87YHSI2zWkcVnwwAtQwo1A1QlH8lNGHVxJMRFLTCIwtDiOFwxqTnViuk0jDwG1w3CQiLA/XYmWMquCKM/uYLiBlq8mlsSB84pNaxDdX11MUAzoUpEdP0EctDSEUtPsSDlxsIbslMx8oUqziKkPYNAKQkVrhirmZmSDyafSU0jeq9mBpyv3uLJkLWJWUmg22zXTQm5Tbh3yn+gwKlqt/dXR6VDX+Oj8xl9s8mlvJlo4HGSlYsRmVlE1tFL2+WXlK1Pq1UGhRiaQ3L7x8KYFR5O5bNX0W/6uPnfgdNrKCHQ5Jw0L+tR5ee/iy2tlsDKrx1k0rgCmbpItr/d+d0WLEItm7TRaKdgjM/Ubk3wtoi14XLwu9M/mZY6d0PtfLL6D6pSxQWY0ECbw9MQMixZbdX+V7le3oqgWL7+d021gA5k82n1mnIHNRutpQL5o5AlUeXJR2NaA4pg1Gcgw0rrtUpdrxb0nJjQbgO8DwmKbZ46vSzKCvP2Y9Q7xU1frn8863FLKxpV/txOMZaMNLA
+
+%URL%
+https://github.com/CachyOS/linux-cachyos
+
+%LICENSE%
+GPL-2.0-only
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1738309155
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%PROVIDES%
+VIRTUALBOX-GUEST-MODULES
+WIREGUARD-MODULE
+KSMBD-MODULE
+UKSMD-BUILTIN
+NTSYNC-MODULE
+
+%DEPENDS%
+coreutils
+kmod
+initramfs
+
+%OPTDEPENDS%
+wireless-regdb: to set the correct wireless channels of your country
+linux-firmware: firmware images needed for some devices
+modprobed-db: Keeps track of EVERY kernel module that has ever been probed - useful for those of us who make localmodconfig
+scx-scheds: to use sched-ext schedulers
+
+%MAKEDEPENDS%
+bc
+cpio
+gettext
+libelf
+pahole
+perl
+python
+tar
+xz
+zstd
+git
+

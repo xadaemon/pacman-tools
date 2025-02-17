@@ -1,0 +1,53 @@
+%FILENAME%
+gamescope-session-steam-git-r8.015e098-4-any.pkg.tar.zst
+
+%NAME%
+gamescope-session-steam-git
+
+%BASE%
+gamescope-session-steam-git
+
+%VERSION%
+r8.015e098-4
+
+%DESC%
+Steam Big Picture session based on gamescope for ChimeraOS
+
+%CSIZE%
+8915
+
+%ISIZE%
+10641
+
+%SHA256SUM%
+a17c4ee859aed254bcc8f9363ae5e41f7e25b2a8adc642edad53423fec3b25c3
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmZpPHcACgkQ87YHSI2zWkftDQwAmNhzBzmFe5hejJHCK5HF9/dPG8vjV1r40fJGfm48SKDkdPxuYheAbG/ZL6f4oXD1ky5ruZHJmbvhnfhqWSVwzrtNvcLtmHSHCeAJBHW0BW+DsQwkfyx85y2ifF2ImUSc86X1BeTgku+J5+i2fwkd3VB0UoP7JIraW2XaKGAKAgGT9m9MQmDZINmCj5ciU8ggsYCKmyUqNwdH3sBtzXFF5S5g07n5zZW3gS9hZewByRAQFO1EFHvEzZ9HDoRbxhJ8De8wsstC48PnKN4Lb6YghHYGLNmvtnfxcUXx/2PZ/cF2CfAQA9jHGofnBQ9w1g+0ou3SAXKliBF3A+/XNXLGKGrFJbG/sMrTl/K05WVXHnPQY1LED60WXJ3nPpreRJR0sEvWShck+VirC0clK4j18lOKyms7SQJeULFlYgL3fvg/br4+IHx8ST4obEux5Df75+lOu8P11/uuBuqVbHvI72N3ylUAyDJqGZ/gKHimLgilmRNfHGEdKCVTiNzv1OU+
+
+%URL%
+https://github.com/ChimeraOS/gamescope-session-steam
+
+%LICENSE%
+MIT
+
+%ARCH%
+any
+
+%BUILDDATE%
+1718172778
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+gamescope
+gamescope-session-git
+
+%OPTDEPENDS%
+chimera: for steam-tweaks integration
+frzr: chimeraos update system
+
+%MAKEDEPENDS%
+git
+

@@ -1,0 +1,53 @@
+%FILENAME%
+nordic-kde-git-2.2.0.r71.gff8165c-1-any.pkg.tar.zst
+
+%NAME%
+nordic-kde-git
+
+%BASE%
+nordic-kde-git
+
+%VERSION%
+2.2.0.r71.gff8165c-1
+
+%DESC%
+Theme for KDE Plasma 5 using the awesome Nord color pallete
+
+%CSIZE%
+4260955
+
+%ISIZE%
+5551531
+
+%SHA256SUM%
+72cf57b2e86c9d59feaba418a0688f7cadce6b2aabcb96e01ee648db0666ac83
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmUcW/4ACgkQ87YHSI2zWkeBiwv9FV2HBi5ebl0Ziw8TA089dKkzDwqNjnL7MKBjXQZdrc8BvX6BXEvio2Cn0K5eHcwB9B8rfb18EfLALrmcq7YrhWg6qu/0fAst2xMJOS2fBdJAQ/PMwswW28pQ8XNRK40+ly9pK8tGdOuHmLURzAQqEcuAdWAo7bdbpdH03GgHGe29YBe9+PRGedOBDPAeaEqR073tgR/zR/UPfRiKfhkIqRHaA+Np/HPzkqtQro3dygNJFPB619Um3kT6rbMUjeIbSh+WksvamBQvI4Fzq9b9imR1qvh+d0XidJoOv0pMUIar7lMvPmAOOzVFQZ0gc9qLMcPIA7RDkjE++c5OtIDNwiutvDE+1fDI/Dq5gBXvH4dsDBRLqtWsZhzWldmP98JDVeusGP4jcQETdmw1PTHA2Z8IATiy7iaLHo38Z63EiJDQ6X1Ha2JXIa9qchvlLL9W46Tg0N0NmN4MOgrQo7b3fcCysxmlP68tKnCCEzBUTSIdGrXgzjEoI4rOjjEDiAuy
+
+%URL%
+https://github.com/EliverLara/Nordic
+
+%LICENSE%
+GPL3
+
+%ARCH%
+any
+
+%BUILDDATE%
+1696357366
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%PROVIDES%
+nordic-kde
+
+%OPTDEPENDS%
+nordic-theme-git: Matching GTK theme
+kvantum-theme-nordic-git: Nordic theme for Kvantum Qt style (recommended)
+sddm-nordic-theme-git: Nordic theme for SDDM
+
+%MAKEDEPENDS%
+git
+

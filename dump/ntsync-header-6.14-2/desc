@@ -1,0 +1,45 @@
+%FILENAME%
+ntsync-header-6.14-2-any.pkg.tar.zst
+
+%NAME%
+ntsync-header
+
+%BASE%
+ntsync
+
+%VERSION%
+6.14-2
+
+%DESC%
+NT synchronization primitive driver - Linux API header file
+
+%CSIZE%
+3768
+
+%ISIZE%
+1969
+
+%SHA256SUM%
+2cc7fa40a6e58ec5b1b0bdd0ff159e8db2e82b262c69ad67816f7214d89d87c3
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmebK3QACgkQ87YHSI2zWke9yAwAnpkXPoRyDL9ohYsTPhCVN2TfzlUTfUZDU8oZtGVQiCgPdl+yqrQwAkBAHIiZSXf6kYKLky1GDlRSzjXu3v20XqFRs9DYPl4NsHEexjBgLEk2XUjP0qfTgjTv18QZhnEksL3wqfS4Phplcvo3ItRzegt7Dv7IXldfsg8alC+S1rL8s9OzpWyTn2a42d+osS0ROey6G+fDO7iMJkODhS2Yilh+jBbnNXr0DnSmI8NiPABNGDZiWsbG7sasHIr//+iQTSCjI8A+hE1M6YOg5l9nXm5e76E0iRbJfLFEYbQykUk0jSlVpGR6zottlPif7bN6zbTKxeZwS/bCbAo9IQqqt0cxx7CLocJ3M52ci+dh2a8W5UigV/9oWgQQZF1pyKvCejdWj3nHJ8p2iY5oc/vWqNStOBI+Mvk9gX6VwnuzuMB+zlvjMgCcNtHs9jdMmOJsJzQ24ojprtQNMpWScG4eqJutr3jocqZ2aJxe8vSMVlxTdEOeUILDnVSok4i4xjpX
+
+%URL%
+https://lore.kernel.org/lkml/20240519202454.1192826-1-zfigura@codeweavers.com/
+
+%LICENSE%
+GPL-2.0-only WITH Linux-syscall-note
+
+%ARCH%
+any
+
+%BUILDDATE%
+1738222448
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+linux-api-headers>=6.10
+

@@ -1,0 +1,79 @@
+%FILENAME%
+neovim-git-0.11.0.r1727.g524cdd35c2-1-x86_64.pkg.tar.zst
+
+%NAME%
+neovim-git
+
+%BASE%
+neovim-git
+
+%VERSION%
+0.11.0.r1727.g524cdd35c2-1
+
+%DESC%
+Fork of Vim aiming to improve user experience, plugins, and GUIs
+
+%CSIZE%
+7166539
+
+%ISIZE%
+30426945
+
+%SHA256SUM%
+83f954bb53796206b0b77f29d1f2ac4b2aecc91328a5dceca66e67d7f830a880
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmeqJhMACgkQ87YHSI2zWkdv/QwAmOfuvYkp2a73ZA80g5frhiWbbE5rXoOwUY6qgwHlywmotfPQIQBdsJPskobQqkZc+lO5H4mnzlieyp9h8+5Xb0QVwGIWPRUufAyg0qzvLyzCCIyq74jb9PGlJHrxbd9T7/T61EzlhjcxO3rWGUI3Um5FOZqoEHrKkoercAkQebWu417oATXheQhgmMgGxSKeoAvDJo6NoZT8iWM43FHgfMmVJF0c6L8whDOn07X4vRsfMfY0OMeEw8ciCLY6i4jfwX8kf18PRx2262ltzXJg+FfGsHY7kItECMvfjvVvIX2IEf6ClfCjwIyIkfBsPx1PqMN9TOvnydX8a6WI37uKgvKed6y2S9+lhK3H31xAgw2LBeTQ8aAjPLvA9BEWDpAKQDxSDah3mTYQxtDEFE78epU9EPwoV6+R7/N8m+4Mx/DcCryeW1ZLJobux7sdPWqLVZvDpbqLHkjWMDcTHUxCO14kZe5kqHiM/DBn+bW6p2SSLcyQzo86dVhclzW5bTO8
+
+%URL%
+https://neovim.io
+
+%LICENSE%
+custom:neovim
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1739204082
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+neovim
+
+%PROVIDES%
+neovim=0.11.0
+vim-plugin-runtime
+
+%DEPENDS%
+libluv
+libutf8proc
+libuv
+lua51-lpeg
+luajit
+msgpack-c
+tree-sitter-c
+tree-sitter-lua
+tree-sitter-markdown
+tree-sitter-query
+tree-sitter-vimdoc
+tree-sitter-vim
+tree-sitter>=0.22.2
+unibilium
+
+%OPTDEPENDS%
+python-pynvim: for Python plugin support (see :help python)
+tree-sitter-bash: tree-sitter parser for bash
+tree-sitter-python: tree-sitter parser for python
+xclip: for clipboard support on X11 (or xsel) (see :help clipboard)
+xsel: for clipboard support on X11 (or xclip) (see :help clipboard)
+wl-clipboard: for clipboard support on wayland (see :help clipboard)
+
+%MAKEDEPENDS%
+cmake
+git
+ninja
+unzip
+

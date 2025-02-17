@@ -1,0 +1,76 @@
+%FILENAME%
+linux-cachyos-cacule-6.1.8-1-x86_64.pkg.tar.zst
+
+%NAME%
+linux-cachyos-cacule
+
+%BASE%
+linux-cachyos-cacule
+
+%VERSION%
+6.1.8-1
+
+%DESC%
+The Linux cacULE scheduler Kernel by CachyOS with other patches and improvements kernel and modules
+
+%CSIZE%
+163745637
+
+%ISIZE%
+164004490
+
+%SHA256SUM%
+c1a8b2043155734ac13d7cc2c2989b82313efb8a0e9c314769dfd5352c8de98c
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmPP1dQACgkQ87YHSI2zWkfmHAv/dcXSrgy/DHJtIMrFrD4TZle5H4CXDd1AYVmZ7tTkvXBL6n71n75zzDHzSKcGCmNXfWPJHL+wrSxqDT2c000S1LYEi5RsaYnKt3535OIkG255h3mdZt3b/TZ1oxzepXrccRJQMqytYCmMMcJlQKw3cfev4m9nGS4pdXxGEn4yEPhgdyK9ulhrzoIW1UaH+LfXqpfFrGz9iYf6Ckzch23utIYgwbYk2E76wOSSQA5lnrMLP3E5F/0oum7xmOvOqYRjjoyWQANeGCLcGrnf445UvrZLGiE26cgrLqV5M3CSrJ0/7VpohVirh7/lJJgQapSPF/D4wdjpcBhceD/igEMPZUJsRs+LF0DX38NTeXLyvX0t5JmnmeFZzDQ1CYFK73A/knIRygaLuB2ks/VVJHRrZOoEqjRBD/GQa5XK1nQSAmagcPG69W3SUtDjvtMFXtQEf63PhAye/PnYYYJsAbM5bceiW+btinRpAD737GdZviEgP3nzlat08ukEP3pzCKKm
+
+%URL%
+https://github.com/CachyOS/linux-cachyos
+
+%LICENSE%
+GPL2
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1674564391
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%PROVIDES%
+VIRTUALBOX-GUEST-MODULES
+WIREGUARD-MODULE
+KSMBD-MODULE
+UKSMD-BUILTIN
+
+%DEPENDS%
+coreutils
+kmod
+initramfs
+
+%OPTDEPENDS%
+wireless-regdb: to set the correct wireless channels of your country
+linux-firmware: firmware images needed for some devices
+modprobed-db: Keeps track of EVERY kernel module that has ever been probed - useful for those of us who make localmodconfig
+uksmd: Userspace KSM helper daemon
+
+%MAKEDEPENDS%
+bc
+libelf
+pahole
+cpio
+perl
+tar
+xz
+zstd
+gcc
+gcc-libs
+glibc
+binutils
+make
+patch
+git
+

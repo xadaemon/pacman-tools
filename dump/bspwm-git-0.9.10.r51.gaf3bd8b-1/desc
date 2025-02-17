@@ -1,0 +1,65 @@
+%FILENAME%
+bspwm-git-0.9.10.r51.gaf3bd8b-1-x86_64.pkg.tar.zst
+
+%NAME%
+bspwm-git
+
+%BASE%
+bspwm-git
+
+%VERSION%
+0.9.10.r51.gaf3bd8b-1
+
+%DESC%
+A tiling window manager based on binary space partitioning
+
+%CSIZE%
+133157
+
+%ISIZE%
+318982
+
+%SHA256SUM%
+64dd2f26879b737da480c904d43dcf851fe4495c9504e804eb94250870df2a6b
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmeqGacACgkQ87YHSI2zWke7TAv+IoC3JL3TBjlGnozH7r9IWZLJz4EiL3FabOuFYibT0+nFonOVtLgaJ7Pc9ArDCfcpHZYebXp78xvMk9zyNLA33hnO79/97vBJBzwoeA3QbC5HDZw2tqqevymxlQcYjytr3lVvzGG1QshpzpnkcHZbwZ+gn5XNXUwNgNV8ZLVFmbLyQJbRowxxfWOMd9zNapUjMVK1EjWTKjS49enb/dJjlCss27TPspDVMBKnAh1ZF0dv8sBkdG4m4Rc7hw7Rnrm7R8L/yamemRN410oG1LhGuzF6WktAicZuKfeWSPIwCcIpu6KcE6wP4Y1fmt4kpsY1coZBz9grde5Kaw2T85WFBArIr5ZAoJJ7/yHfdwVeSLg1J9N+x6SqudYHVYc7NJWFuDSi8IIllySQm5H9wI8Hkvsj+CqUwXxc3RcZtjO9aH30BpfnovdLah8M5DhmkSrdL4T+8ViBnVPufSgwhwcL1+YgdBeo6ToodzsuhotFSx2dItWsQlqOYF/IjoQsAW1B
+
+%URL%
+https://github.com/baskerville/bspwm
+
+%LICENSE%
+custom:BSD
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1739200931
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+bspwm
+
+%PROVIDES%
+bspwm=0.9.10-1
+
+%DEPENDS%
+bash
+xcb-util
+xcb-util-wm
+xcb-util-keysyms
+
+%OPTDEPENDS%
+sxhkd-git: to define keyboard and pointer bindings
+bar-aint-recursive: for the example panel
+xtitle-git: for the example panel
+sutils-git: for the example panel
+terminus-font: for the example panel
+python3: for some scripting examples
+
+%MAKEDEPENDS%
+git
+

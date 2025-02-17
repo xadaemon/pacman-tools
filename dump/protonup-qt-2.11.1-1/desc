@@ -1,0 +1,79 @@
+%FILENAME%
+protonup-qt-2.11.1-1-any.pkg.tar.zst
+
+%NAME%
+protonup-qt
+
+%BASE%
+protonup-qt
+
+%VERSION%
+2.11.1-1
+
+%DESC%
+Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris
+
+%CSIZE%
+295565
+
+%ISIZE%
+1747324
+
+%SHA256SUM%
+c90446b9f1d08186347f7c59690b7f3ff900edbd8e308036470cdb0edf17a67e
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmd82voACgkQ87YHSI2zWkesegwA1yCPsOuTXH0TR+GtK0cgrMUJxC/cUDb9YD7MBnQgw666vEnp49yCrrubh4dcfLkqHLfSqWGSsvgDYgUiHvBGvK42Ykw5vuVjMwUEdU1wJ3BqVEmM5zNVBqwJVaRkSCWXt787AF20pGwFQ2MgIwh8uOOAoro+MZjHumugBIrMTLJHOu3gehmZTNczNrJh2ucG4OHRFiaMWNkDQgfESvb4LW5t2vLVuZctBWKXiFH6/tm5kM3m8v7FYRzPpsJGM7wtpxJZx7rQiEffa1h5JZgVqJ/ZprLI5DPA4tc6uiTppEOHK7mCD0uqrDIfcefWNAgX81jieSVOkJU8Qyb7lVfVOq+AU1+gNuVseQuazDP7/ha6Nij2mGrt5LKRwUVvXiJ/TeR/NHqtZnWf+LJLgoXbWvgZ8LnDyBxgiO03gYoNLsJ3hV1cGoHh6zedVoOtUH/f5jXNt9fpWx9elzfsXfSOHOCpvaOq00gaGQUQNYu9g7JHre4oCdstPmW4g76LE+Bp
+
+%URL%
+https://davidotek.github.io/protonup-qt
+
+%LICENSE%
+GPL-3.0-or-later
+
+%ARCH%
+any
+
+%BUILDDATE%
+1736235756
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+pyside6
+python-inputs
+python-psutil
+python-pyaml
+python-pyxdg
+python-requests
+python-steam
+python-vdf
+python-zstandard
+qt6-tools
+
+%OPTDEPENDS%
+dosbox: required for Boxtron
+git: required for SteamTinkerLaunch
+inotify-tools: required for Boxtron & Roberta
+scummvm: required for Roberta
+timidity++: required for Boxtron
+unzip: required for SteamTinkerLaunch
+wget: required for SteamTinkerLaunch
+xdotool: required for SteamTinkerLaunch
+xorg-xprop: required for SteamTinkerLaunch
+xorg-xrandr: required for SteamTinkerLaunch
+xorg-xwininfo: required for SteamTinkerLaunch
+xxd: required for SteamTinkerLaunch
+yad: required for SteamTinkerLaunch
+
+%MAKEDEPENDS%
+python-build
+python-installer
+python-setuptools
+python-wheel
+
+%CHECKDEPENDS%
+appstream
+desktop-file-utils
+

@@ -1,0 +1,54 @@
+%FILENAME%
+apple-t2-audio-config-0.3-2-any.pkg.tar.zst
+
+%NAME%
+apple-t2-audio-config
+
+%BASE%
+apple-t2-audio-config
+
+%VERSION%
+0.3-2
+
+%DESC%
+System configuration files for the apple-bce audio driver
+
+%CSIZE%
+4203
+
+%ISIZE%
+4947
+
+%SHA256SUM%
+888eff9f4aaffc8aefa9e5a8f636fe0e2e8504fc077071680d3107db16834b54
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmZaBtkACgkQ87YHSI2zWkecKwv8CouGPXOBcVeSr48/iZ10Yr9ygSTmxLXaXb+e96Sy1ikpkJb7jiGmw8GlzLKmOiFLESyLns2mKebbKzEVxGGFNe1Xv83forhYNgPoWdtYDjPUyxhGWzLPXy5gGQWTWKiOgF/Eb0m7FXMV/o/X60AntNAPn+hhGay5NDiz0vNRb0xHKhU/71KcFBWVjKPlui3wQ1pnLvsle1tOUNwNQRYHYH7EcuuNhEFtnCzolJDKom7Zm/Y8DSG/kTWzASwgk6SmVdWgzZdzMTFu2aYUqyC3Xjuipb2u6Q/4wkr7+PPKXO32vVzHq56B+FL3MQOAQNvm+3FUNhfFkAmwdIWZDdIGxXIiOxXXXqVyeFxFXkKdD2S/f0eOFO7nvmo7qsYz21pDUVvy23j0WbrtI/j6XU0oaJbNTzojvMAB0HWXrZniiJnHKMG5mabuLIlT6QEfTazZ/E85WJXS4HI10u3TGpZNJd2fzxlPxW/m1FkmkoXzoWRD0LpALfN5JEq6ivQ1Awa/
+
+%URL%
+https://github.com/kekrby/t2-better-audio
+
+%LICENSE%
+MIT
+
+%ARCH%
+any
+
+%BUILDDATE%
+1717176023
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%REPLACES%
+apple-t2-audio-config-alt
+
+%OPTDEPENDS%
+linux-t2: for audio kernel module
+apple-bce: for audio kernel module
+pulseaudio
+pipewire
+
+%MAKEDEPENDS%
+git
+

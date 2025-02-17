@@ -1,0 +1,55 @@
+%FILENAME%
+ntsync-dkms-6.14-2-any.pkg.tar.zst
+
+%NAME%
+ntsync-dkms
+
+%BASE%
+ntsync
+
+%VERSION%
+6.14-2
+
+%DESC%
+NT synchronization primitive driver - out-of-tree module
+
+%CSIZE%
+9745
+
+%ISIZE%
+29352
+
+%SHA256SUM%
+98979075f5a1a1b98f334a913399c7d3eba30119789c1928f1d1bd82144ba5af
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmebK3QACgkQ87YHSI2zWkeqPQwAlK0npARXoraDP7T6mXorQA9P9yQGxZ9LbVBwMRfIlf0Qbqm0YPglUznLS1ftjLE2ZCyDnAUatIxMg6IRk3zjCCvFYBPGq16LG/yV64XQZMBiem3dWXvVgf1FRgYb2/AxZagUYGr1PO7o4ypflxqcSz5dWEDEIfRPwh7qiiVlKWn+P2kLK+JFYtcCRdKZfFPUlMqY0Kj+sMrH6Vbm7924FeGp7YQgB7Hw5F3pmskfgdSEa4ADfC+UIShxlG1SxBUx+BjedQHOkEnekQ11BVlIhQB4626i2H/eJGs1YqUE1vOYgXIRuUCKVoRJ5a8hLUDP4k4nUiAzvd+YJBLCWN9nMeGjwgpw5pE3ZS78Xb5AzllYe9VZQZCRgH6GB1UGXXKDw+1t27XIAx/DUJ/HlMBe6i7VPotdoL5ZooMIxwtKCb1bB6Ct33ForiQu6FftwPX5qT0lF3G0uRhSvN8BmF3VNjdBoRx2E4+NsBHfsc1Imo7IAxWLOPgR1BTD4Kcvnnm3
+
+%URL%
+https://lore.kernel.org/lkml/20240519202454.1192826-1-zfigura@codeweavers.com/
+
+%LICENSE%
+GPL-2.0-only WITH Linux-syscall-note
+
+%ARCH%
+any
+
+%BUILDDATE%
+1738222448
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+ntsync
+
+%PROVIDES%
+NTSYNC-MODULE
+
+%DEPENDS%
+dkms
+ntsync-common
+
+%OPTDEPENDS%
+ntsync-header: Allow Wine to be compiled with ntsync support
+

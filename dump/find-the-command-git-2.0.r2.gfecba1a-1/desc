@@ -1,0 +1,60 @@
+%FILENAME%
+find-the-command-git-2.0.r2.gfecba1a-1-any.pkg.tar.zst
+
+%NAME%
+find-the-command-git
+
+%BASE%
+find-the-command-git
+
+%VERSION%
+2.0.r2.gfecba1a-1
+
+%DESC%
+Advanced command-not-found hook for bash, fish and zsh using the power of pacman
+
+%CSIZE%
+8425
+
+%ISIZE%
+23287
+
+%SHA256SUM%
+6556a93e7e60b6810b40401767ac01f2fac395fa4ed96786ca71c4835e20f362
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmLs3DwACgkQ87YHSI2zWkcOoQv+MDP4bZhGfVJd8i3QtYZFCaoNy97dIk8p/JxOCi+pXkfafdJgT3kU2okFW2zzNUGLiXY06/5XimlifE7CuUV9avVZ2CLfWyejUqIwWt6o0Uyl0xLmUqsfw7UDvnGvjSIRtR+hERCd/SiUzpDwRa0jGAxV9OSNPkNhKhP/ysEYvRAAR/VHhtpCqqrM0nv7b7djtmB2PliNDMYVRT+Ti71mH1ePV1HJWeqcsQo0HPWYjOTXcHwNrnX9MYV73U9jUdChXXgSMrSXcYLaNwf5XaLoDbjyPuPVRtlysCI1qoRZ9N8TDhxYuo9TNaNvPNqvxBlGCHBArBdQt3ZAAB/sdFQRX1ddk4OP8RU0ZqY5SGHvowxPEvr1uvYZO18zIXfm7qftGx/ju7zQZnE+2v4Um0fZ02zgqZfzHAFqE4wC6ahhMvcqesTV2kEPvxZBaJqM48KghG/5V4DD5MO0EkjyPdHv/EoV9HukrWhSx75mRevvmOpgpwdg6qvgR1dwkBZACZ/+
+
+%URL%
+https://github.com/pkasemir/find-the-command
+
+%LICENSE%
+custom:WTFPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1659690042
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+find-the-command
+
+%PROVIDES%
+find-the-command
+
+%DEPENDS%
+pacman
+
+%OPTDEPENDS%
+fzf: highly recommended for package selection and previews
+pacman-contrib: for weekly pacman-filesdb-refresh.timer
+pkgfile: provides faster searches than pacman
+sudo: helpful for privilege elevation
+
+%MAKEDEPENDS%
+git
+

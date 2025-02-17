@@ -1,0 +1,144 @@
+%FILENAME%
+obs-studio-browser-31.0.1-2-x86_64.pkg.tar.zst
+
+%NAME%
+obs-studio-browser
+
+%BASE%
+obs-studio-browser
+
+%VERSION%
+31.0.1-2
+
+%DESC%
+Free and open source software for video recording and live streaming. With everything except service integration
+
+%CSIZE%
+101628802
+
+%ISIZE%
+337426496
+
+%SHA256SUM%
+6679dc519765e3225e02de86df24d58a804404759957c7bb2ff825d62445969a
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmeM1SUACgkQ87YHSI2zWkexMQv8C+tAKHDQ8jjxD6BUFB9t9OnJr/L2IJrVU/a8u2ZqoD89zhViyPL5HLPbWoewuxMcOnUqXov0q3CXs997s7uNMLkxc0/McsEB2EeYFRabGbYrYsQhixHOTcaNdtXosh5F2Fg1kSM6L+plt3lIWc1UHSRa1N1SExUzGtRwhzMAzCghsMJfMo6LQ101OqbKC6vgkmI2Prp7CFUjVWPGl3UFO5Y67Ckf9yHy2Fwtso3RbNToLDBNglOnkWUY1lYZtcHxA9sGeyshK4B5vSQTMyi3Zj3scSImY1qmje4weve1G/nCIuvLC6G3dOlwtqWui+ktTPDFZiCQJA5hFIDXEN2m6pMjAv6FB9LNF/orSBjFjQO9782TozHGJ6c8JfbblJuCFaaqxDfmh3rjiNSTtx//P2r9kpGaXCx3bh1QdYa+QbygWaugl4l7QueUmF6mkDlkAW5bfVpgxgf3fthCUf1sxX3GlVj18D+nCBRLmUi+rHwIIH9ktEolYsGvlc6gxUaN
+
+%URL%
+https://github.com/obsproject/obs-studio
+
+%LICENSE%
+GPL-2.0-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1737282700
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+obs-studio
+obs-vst
+obs-websocket
+obs-browser
+obs-linuxbrowser
+libva-vdpau-driver
+
+%PROVIDES%
+obs-studio=31.0.1
+obs-vst
+obs-websocket
+obs-browser
+
+%DEPENDS%
+alsa-lib
+curl
+ffmpeg>=7.1
+fontconfig
+freetype2
+gcc-libs
+glib2
+glibc
+jansson
+libgl
+libpipewire
+libpulse
+librist
+libva
+libx11
+libxcb
+libxcomposite
+libxkbcommon
+mbedtls>=3.6.1
+pciutils
+qrcodegencpp-cmake
+qt6-base>=6.6.2
+qt6-svg>=6.6.2
+qt6-wayland>=6.6.2
+rnnoise
+speexdsp
+srt
+util-linux-libs
+vlc-luajit
+wayland
+x264
+zlib
+at-spi2-core
+cairo
+dbus
+expat
+libcups
+libdrm
+libxdamage
+libxext
+libxfixes
+libxrandr
+mesa
+nspr
+nss
+pango
+
+%OPTDEPENDS%
+jack: JACK support
+libfdk-aac: FDK AAC codec support
+libvpl: QSV encoder support
+intel-media-sdk: QSV encoder support(<= Rocket Lake & >= Broadwell)
+vpl-gpu-rt: QSV encoder support (>= Alder Lake)
+intel-media-driver: VAAPI encoder support (>= Broadwell)
+libva-intel-driver: VAAPI encoder support (<= Haswell)
+libva-mesa-driver: VAAPI encoder support
+swig: Scripting
+luajit: Lua scripting
+python>=3.13: Python scripting
+sndio: Sndio input client
+v4l-utils: V4L2 support
+systemd-libs: V4L2 support
+v4l2loopback-dkms: V4L2 virtual camera output
+libdatachannel>=0.21: WHIP Support
+libajantv2>=17.0.1: AJA support
+decklink: Blackmagic Design DeckLink support
+
+%MAKEDEPENDS%
+asio
+cmake
+ffnvcodec-headers
+jack
+git
+uthash
+libajantv2>=17.0.1
+libdatachannel>=0.21
+libfdk-aac
+luajit
+nlohmann-json
+libvpl
+python>=3.13
+sndio
+swig
+systemd-libs
+v4l-utils
+websocketpp
+

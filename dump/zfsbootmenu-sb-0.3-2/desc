@@ -1,0 +1,53 @@
+%FILENAME%
+zfsbootmenu-sb-0.3-2-any.pkg.tar.zst
+
+%NAME%
+zfsbootmenu-sb
+
+%BASE%
+zfsbootmenu-sb
+
+%VERSION%
+0.3-2
+
+%DESC%
+Hooks for signing ZFSBootMenu for use with Secure Boot.
+
+%CSIZE%
+3579
+
+%ISIZE%
+2181
+
+%SHA256SUM%
+edb2be386b094977a61e425e1384396621199fe1e4f2e4a90008a073542b046f
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmT5tDkACgkQ87YHSI2zWkf3WAv/eCxmgzQwoQeejsGOUFgL2agsgfbZKwW2FHCQPM7aYxkOv1Ju6n5Q064Lh4QoIWFVfSVo8hmje5/3Yf69tXs46X5cwA/MLO2bMrbT3JhJf2v7fUl7zVP6fvKi9jASFbHv0nwk95Lo0xV47djKwquD7cw6diH03cLA/kg36Y8uqcfV4D7EUUitpDtzquSJtjC76HYFVYl+lu4ZSYUrjrWrdIbC94lPkgO1jO0IhyCkWaahqpaJCJ+cbDXpamN+NpVekOHM646SutXbsmLAoE2hovKgmM6p24y+XAh+X1fuW8lvVKQMAjq8WFemRrKOuOhzsdU0Wwhi/0fIxq1f8DxTnRH1y2Ck4n1VOO50YhCYXlVSpOgk5Jfu+b3uzMT1VvH5+8Y1Wa2okeUN6Q9xD30SqjeN7DjQC5aBOSyLlItEJ3Gsawobs7FT7OJRR5oqvdXvCql2h8HeoGIzfHxpO2Aih/niQ+9tXDv7JWgTykQy+He8ykTPw7RVMI7H/Cz0G30u
+
+%URL%
+https://github.com/KorewaKiyo/zfsbootmenu-sb
+
+%LICENSE%
+GPL2
+
+%ARCH%
+any
+
+%BUILDDATE%
+1694086198
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+sbsigntools
+perl
+
+%OPTDEPENDS%
+zfsbootmenu: For ZBM
+zfsbootmenu-efi-bin: For ZBM
+
+%MAKEDEPENDS%
+git
+

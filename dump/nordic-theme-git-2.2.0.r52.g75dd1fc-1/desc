@@ -1,0 +1,58 @@
+%FILENAME%
+nordic-theme-git-2.2.0.r52.g75dd1fc-1-any.pkg.tar.zst
+
+%NAME%
+nordic-theme-git
+
+%BASE%
+nordic-theme-git
+
+%VERSION%
+2.2.0.r52.g75dd1fc-1
+
+%DESC%
+Nord-derived themes for GTK and other platforms
+
+%CSIZE%
+693880
+
+%ISIZE%
+5715872
+
+%SHA256SUM%
+d55006695142a11ee7c6488c70ac0100b92771e12794c77263eb33802864f5d9
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmRx3AIACgkQ87YHSI2zWkfR1AwAqB4QWDMS5eMztJmWxUIbJZAvD8YAXsiZ49HRqq3JlD5aOEKi/4Bpl+ppFjkx+tdemU812j7X3IIob93Px35AqDhQ4rD8cIOZtb78uebgYLGI7pf5vNPxyi09OxfDubppmoUcXbGOcR8hyQhWj2quqikPMQba7v2PtPZoHH0YCStw6xht11pSGZY5TDkIbqpW0jvA2FgIMaEjzWLkSoi5Com5dTdQ1Be5zTQLLxArYLVjkAMfyL4Yseqow/fhQGFSE2OZaWqiDfdS0N9fwOIiNrWVNlAbYFG14jtUkr2nxiE0H8Kpn0zp1aMYUJeFLgM/79q0U89YWyxxYCSuE/o8AdxBDJahlGO9j5gOBDPM7bgECIEMFefG/38lGCjrMmoJOsa9bjwR/W11E3t6fuEKC9lwo3V4sFYnP9mm7LJHorBBpcwgdfGvUkuJby9MM/9y2YByTuzTHoyNr4w4HeFRwUsFaFNpuE4yZqKKSXZa8uEe65Meho7qkia4NBjNnfqw
+
+%URL%
+https://github.com/EliverLara/Nordic
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1685183449
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+nordic-theme
+
+%PROVIDES%
+nordic-theme
+
+%OPTDEPENDS%
+ttf-roboto: primary font face defined
+ttf-ubuntu-font-family: secondary font face defined
+cantarell-fonts: tertiary font face defined
+
+%MAKEDEPENDS%
+git
+inkscape
+optipng
+

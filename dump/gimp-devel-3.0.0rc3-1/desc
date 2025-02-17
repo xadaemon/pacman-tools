@@ -1,0 +1,119 @@
+%FILENAME%
+gimp-devel-3.0.0rc3-1-x86_64.pkg.tar.zst
+
+%NAME%
+gimp-devel
+
+%BASE%
+gimp-devel
+
+%VERSION%
+3.0.0rc3-1
+
+%DESC%
+GNU Image Manipulation Program (Development version)
+
+%CSIZE%
+24369112
+
+%ISIZE%
+155165316
+
+%SHA256SUM%
+6156891adc7e6cbeb5ad0a15f462cb8a5e0273d13496b284cd1f4429b8699f78
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmetnlwACgkQ87YHSI2zWkfRcQv9FCn0biQPxol+p5tCE8TLD1AVxJjTEAnDLq4wuH0dtRGFChM5gh5NOSmlHZBVGOPrXqiw9xjYhYRWZna7p/cyw2VSSCqgigzRUqnd9XcfnRoRLsfP1eoUbZmLr0jhjXcyVh1SEGwTs8m5grrGVJWLl4LnuBfV19vOt3ZAnFt/eu8PL96yun7Jx7Q4gahZrOerNyuApnuZH+W+/bAPBc9iVK2FV/tPzsGwSCzCbVTCUrf4NAEdjp8qTGaQHVhmxJ3wxJpCptmxRlYLuaZiCURCGRdNAGjwjQ1459mRl0HcUw+bzQSXI3IWtn2Ao2VQ3O++/MlUYWRo+JoFwiUwtEwaZTCZHv6Phcd8lkqs9IdhsVG74iRv1P7srf5r9Iw1oH/lSXWywIlmxtLGHXSDGEipjjmp33/liOQnXBvRVssOrDtRpo6C4yrHyxf9yoVPc2GEkMWM988gVfBmQralt0YiPLy97WLURDzypAWsFciSe3E7rxUGrsQZuBg/2udza6xd
+
+%URL%
+https://www.gimp.org/
+
+%LICENSE%
+GPL-3.0-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1739431378
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+gimp
+
+%PROVIDES%
+gimp=3.0.0rc3
+
+%DEPENDS%
+appstream-glib
+babl>=0.1.110
+cairo
+desktop-file-utils
+enchant
+gegl>=0.4.54
+graphviz
+gtk3
+icu
+lcms2
+libexif
+libgexiv2
+libgudev
+librsvg
+libwmf
+libxmu
+mypaint-brushes1
+openexr
+openjpeg2
+poppler-data
+poppler-glib
+python-gobject
+
+%OPTDEPENDS%
+aalib: ASCII art support
+alsa-lib: for MIDI event controller module
+cfitsio: FITS support
+curl: for URI support
+gjs: JavaScript scripting support
+ghostscript: for postscript support
+iso-codes: Language support
+libheif: HEIF support
+libilbm: ILBM support
+libjxl: JPEG XL support
+libmng: MNG support
+libwebp: WebP support
+libxpm: XPM support
+lua51-lgi: LUA scripting support
+luajit: LUA scripting support
+qoi-headers: QOI image support
+zlib: Compression routines
+
+%MAKEDEPENDS%
+aalib
+alsa-lib
+appstream
+cfitsio
+curl
+ghostscript
+gi-docgen
+gjs
+glib2-devel
+glib-networking
+gobject-introspection
+highway
+intltool
+iso-codes
+libheif
+libilbm
+libjxl
+libmng
+libwebp
+libxpm
+libxslt
+luajit
+meson
+qoi-headers
+vala
+zlib
+

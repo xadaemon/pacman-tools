@@ -1,0 +1,72 @@
+%FILENAME%
+librewolf-bin-135.0-1-x86_64.pkg.tar.zst
+
+%NAME%
+librewolf-bin
+
+%BASE%
+librewolf-bin
+
+%VERSION%
+135.0-1
+
+%DESC%
+Community-maintained fork of Firefox, focused on privacy, security and freedom.
+
+%CSIZE%
+85495822
+
+%ISIZE%
+366554549
+
+%SHA256SUM%
+6f13048955f8af51e077e60cf1e6691927937206a9f39bc9ae46307fddf235e6
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmetroEACgkQ87YHSI2zWkdOZwwA28gB12GPEXd4P5UkXfSxuO7UUXvpNtB3yJ8NV9mnZCT7WaVgNhuUurklvd4IcISeyrY+5h8vpfrHda/u84QzGaj5yvXNRUapMQT5z5SthL7DZiw3ucGlOc+PMSm/pRYnkHPcE/XE8Pd9jIVh5dAuBEZ8/T2cVd9DTcNm+XyygzyJx2J5wppWVy3eDgihCHpzYcqzaRSPCqnrBGvk0jCJ5jvPAxZmqYOOUpC4ZvR8GdbDMBv9M0bvqMH8k3PY9FsyUV75jaa5B8OEIh3QUgYdF+KEe4AZxwrk+GReNogPrRhtQd1xKShG2BIFVmH/e++Kjb+LBtujxh0N5L3K9fEZclAV+VVqvY6lyRKnFVBGceDvvKJv17AZInaJSy2oTnJWDhDJiEiTCmMpM6RrRMufQwk4+BDBNZgcte/7WTHOygyj8mKogeum8Y6L+NxYCG0Vk1w/ssVu0m/6isGGup9pZgap1DNP8Svr6Yfsuguws6hsLc1K752YLnsNRnhHGKE1
+
+%URL%
+https://librewolf-community.gitlab.io/
+
+%LICENSE%
+MPL
+GPL
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1739435588
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+librewolf
+
+%PROVIDES%
+librewolf
+
+%DEPENDS%
+gtk3
+libxt
+startup-notification
+mime-types
+dbus
+nss
+ttf-font
+libpulse
+ffmpeg
+
+%OPTDEPENDS%
+hunspell-en_US: Spell checking, American English
+libnotify: Notification integration
+networkmanager: Location detection via available WiFi networks
+pulseaudio: Audio support
+speech-dispatcher: Text-to-Speech
+xdg-desktop-portal: Screensharing with Wayland
+
+%MAKEDEPENDS%
+git
+

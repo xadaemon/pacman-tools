@@ -1,0 +1,58 @@
+%FILENAME%
+bluetooth-support-1-7-any.pkg.tar.zst
+
+%NAME%
+bluetooth-support
+
+%BASE%
+bluetooth-support
+
+%VERSION%
+1-7
+
+%DESC%
+Metapkg containing needed packages for using Bluetooth
+
+%CSIZE%
+3028
+
+%ISIZE%
+0
+
+%SHA256SUM%
+42b86743c56e452c1a550c9b30915955dca244bbffd5406d0299df2b51edfb3c
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmL76ykACgkQ87YHSI2zWkcv/Qv/X9Vks6OW2oViVlBx3mMnrtLxNBHRUdAmndKMpJc7SbjUFHDYYAkHez1Zarw9zbIiABVDAn3FYzzW/URfklGw2tNI+7DGTwpgZFzbEimw4sirQKOsGXiad2R1ZbLQeAROsCAsXcZcwU7o2XwzxX221eYpzaUKktTyaYHIhbHadqdwJPRJVVzPj++U8fczixixvE956U5SroXgnB630nEdkOkgDckOV+bspUHCaWjbCwyGVJAIQ4XU7lV7JxfZK/lJrvyWt3ICTm5t42jo8VFTUqsoG+3jHeRIQ9DPMW935xnrBoR327B2MnK7S387MVwEzUCPGPNB+OU6ckltoKVsElGyNf9kevxhrhe/3lULzawsRipTDkI3hB0JOFrU6YJqAINlyYHCab8XaWIrRjkOAFMZfdbdQxhwshZJePtCFoskPmrnNotCjaN0E/uF5GwwcfB3A1oJWTZneTtZ94vlITmjjUICcqX9spY6qlh2Ix+HKVqrcQjGhNRmQNoJpLC6
+
+%URL%
+https://wiki.archlinux.org/index.php/Bluetooth
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1660676903
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%REPLACES%
+manjaro-bluetooth
+
+%DEPENDS%
+bluez
+bluez-hid2hci
+bluez-libs
+bluez-plugins
+bluez-tools
+bluez-utils
+
+%OPTDEPENDS%
+blueman: A GTK bluetooth manager
+bluedevil: Qt bluetooth frontend
+blueberry: Bluetooth configuration tool
+

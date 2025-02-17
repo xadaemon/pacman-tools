@@ -1,0 +1,73 @@
+%FILENAME%
+linux-cachyos-deckify-6.13.0-2-x86_64.pkg.tar.zst
+
+%NAME%
+linux-cachyos-deckify
+
+%BASE%
+linux-cachyos-deckify
+
+%VERSION%
+6.13.0-2
+
+%DESC%
+The Linux BORE + Cachy Sauce + Handheld Kernel by CachyOS with other patches and improvements. kernel and modules
+
+%CSIZE%
+150585170
+
+%ISIZE%
+150832291
+
+%SHA256SUM%
+2a7e3208c1121313ee084018835f35657a35bfe35059bd0630ce7fb8db46612d
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmechVoACgkQ87YHSI2zWkdgyQwA0PvqwkmbwBuI9cLxTXfGYJg2lJMRiq5W6rBVTFVXX3Y57li5pg5aHWfYDs6ENODAQra0fvvPUjNZ5xZaAb+BrZFFlg9q13vKUlGwHsLcoPHpkaUeiFEgNlqGpI7ShCUePaJsMmYlzMqGl1IOaCT85cH3DSgJfeHYtDFX5vHwfGSUoZldl+/1Q5BWN6b6SbRjqHcSvcz80rqwlloIrE3OEcPGo3PtFUq8NIUhiISxFNIuehY+8q4egRZzhSYlxQEyl3FwdnkL71ZSr9q9Ji4O4NurAD/3CMbV/h0N4Li+FxJ/ySAW+lscYEmzW8TAPvf7ky07OLjECtwl3i9PYwtA1RFWPe8WB32YpruXX2CYb0kmU1NwaB1ztgH3cWjVhAK3Cdw+pKhNqmFZWu1DYF0/Hc1UO2r4CNWdqgSa2cXuRUSpALXAvIpoCS+MX28aOFwo2oOb/01d0YSsY+eAIeoJB2c9FDklKis2mTe626TnB409GI/2QxrET5pk8tEEBIjE
+
+%URL%
+https://github.com/CachyOS/linux-cachyos
+
+%LICENSE%
+GPL-2.0-only
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1738310093
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%PROVIDES%
+VIRTUALBOX-GUEST-MODULES
+WIREGUARD-MODULE
+KSMBD-MODULE
+UKSMD-BUILTIN
+NTSYNC-MODULE
+
+%DEPENDS%
+coreutils
+kmod
+initramfs
+
+%OPTDEPENDS%
+wireless-regdb: to set the correct wireless channels of your country
+linux-firmware: firmware images needed for some devices
+modprobed-db: Keeps track of EVERY kernel module that has ever been probed - useful for those of us who make localmodconfig
+scx-scheds: to use sched-ext schedulers
+
+%MAKEDEPENDS%
+bc
+cpio
+gettext
+libelf
+pahole
+perl
+python
+tar
+xz
+zstd
+git
+

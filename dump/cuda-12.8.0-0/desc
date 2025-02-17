@@ -1,0 +1,69 @@
+%FILENAME%
+cuda-12.8.0-0-x86_64.pkg.tar.zst
+
+%NAME%
+cuda
+
+%BASE%
+cuda
+
+%VERSION%
+12.8.0-0
+
+%DESC%
+NVIDIA's GPU programming toolkit
+
+%CSIZE%
+2709445652
+
+%ISIZE%
+6993256863
+
+%SHA256SUM%
+bedc991e2f9be321e336081e502c1e6b2ac7651dd2c8b2c98dbf0e031bad18bf
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmeiKIAACgkQ87YHSI2zWkffUgwA8zASsgOnRcTy6rLL9A8ets9YFJ9hlqYruWSka4TAOl+chI3FJPISHkviLMka6cLfcJ52RYPUSffcXcU1d24NKJTUqgiFM9lnRL5GBPgkkmMXrvtNdq6iMv+EtBvKUUTmYMxh/aoXFZ/KYDYYrcQY4O0DCHC1MvCnIpq637gW12GeU7+3Z5V7TpZuE/BgkjFeBL2Uk4bEHnm1gC2NuRvRG5lxtjcx/u6YgF3F/7BGFaT3VIQD2JPsJYVmzssEaRQmyNXInpbWvSShirzelKUIDoj9IqhkLQrIS21M7SfkDyzVb5eTABq0It4/yt2d9huVT3v/8DKRxUNNT9nFRNkWq1GopzI/rm3rC5tSzW+r3mrswqIU3ANnLzYQNL/cMIFVWgJZvQqUvWk41gBVWn9CbZjxIwYk5jcJBpiNcN19JD8/BDnLU/pzNVzTWw8UEgnc1WaJbQ9XnOiY22uH2qqsZ7hIhvJEuO7Uk/K2hDoUTiUmF5VdWKF++4IBHYIWr8LS
+
+%URL%
+https://developer.nvidia.com/cuda-zone
+
+%LICENSE%
+LicenseRef-NVIDIA-CUDA
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1738680061
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%REPLACES%
+cuda-toolkit
+cuda-sdk
+cuda-static
+
+%PROVIDES%
+cuda-toolkit
+cuda-sdk
+libcudart.so=12-64
+libcublas.so=12-64
+libcublas.so=12-64
+libcusolver.so=11-64
+libcusolver.so=11-64
+libcusparse.so=12-64
+libcusparse.so=12-64
+
+%DEPENDS%
+opencl-nvidia
+python
+gcc13
+
+%OPTDEPENDS%
+gdb: for cuda-gdb
+glu: required for some profiling tools in CUPTI
+nvidia-utils: for NVIDIA drivers (not needed in CDI containers)
+rdma-core: for GPUDirect Storage (libcufile_rdma.so)
+

@@ -1,0 +1,53 @@
+%FILENAME%
+yay-12.4.2-1-x86_64.pkg.tar.zst
+
+%NAME%
+yay
+
+%BASE%
+yay
+
+%VERSION%
+12.4.2-1
+
+%DESC%
+Yet another yogurt. Pacman wrapper and AUR helper written in go.
+
+%CSIZE%
+3192210
+
+%ISIZE%
+9283520
+
+%SHA256SUM%
+722f97a9fc1c77e60889b740ed9ef377a54b64fcf69162c35bf038fccadd999f
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmbsS2MACgkQ87YHSI2zWkdI3Qv9G1exTgpCmlleLwIjYQXwAa2CBtFIV0qb9ZfxdPCmTyluI1GqGtqgCncRL4e3WYp/wNBhiARrkU/w3jJM3DSu71VcsLI/vnEYamde9NC+4IC2XO2iZW3ao5oGoYvRt6x9MPC4I16wx48Sn4Ni0cu3fgXhimA4a6an7W9aJ1vghfq0o65ncITbHKhPuSqlRxMIoo0LYMvJ+ypQUvPXzhRM2pW62jbYx0vF1s1yjwrSHnlO8IaeIaZPEzIhBfEVa6MeIxYrDMsvgHqwu2GUNT1hZPJu/R/NGdKNl3PJKW3UBDpeogJ+8S9m1LwL+N7DC+JOkTvDGVpn3CjPMlyZ00ll4sgbzl8UTQ/qyq6v3YMdylsbMmYqk8pbL9IAFY8+ISulpZnYiTgls7vLWG17a3ViSyr/hnVzszrw5NqcFXLhoSepHEWpwapAzP3aRpuRxC9H9J6mjEEwOVymK/yHD1AJnwEQLlchxAsEkFreSJbigtWYx9DrMZqUfaKgWGCWCwHK
+
+%URL%
+https://github.com/Jguer/yay
+
+%LICENSE%
+GPL-3.0-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1726761799
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+pacman>6.1
+git
+
+%OPTDEPENDS%
+sudo: privilege elevation
+doas: privilege elevation
+
+%MAKEDEPENDS%
+go>=1.21
+

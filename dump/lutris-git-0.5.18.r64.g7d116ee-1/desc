@@ -1,0 +1,108 @@
+%FILENAME%
+lutris-git-0.5.18.r64.g7d116ee-1-any.pkg.tar.zst
+
+%NAME%
+lutris-git
+
+%BASE%
+lutris-git
+
+%VERSION%
+0.5.18.r64.g7d116ee-1
+
+%DESC%
+Open Gaming Platform
+
+%CSIZE%
+1908848
+
+%ISIZE%
+10270611
+
+%SHA256SUM%
+9f6b5708a87a747719f2c016639c91000b1f16251e7218d5da39329b36708925
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmdhr3QACgkQ87YHSI2zWke7egwAkSch2df7yvarw8pxnS0n77YQJKkqH/ji1vxYmCyRCKinmu6WwfEhIhqp2oBSEX2GwctHReuf/yd/eR0Tm5SDGbx+N26W0FTLZ6At7iL9yBek+25Cl/7U/M5dIjUf0tTGxPLwTrMUnwmGxo/4fhiUxWLFppWMFJszwL+6yvwjdVbZ7c5xOu3Uv/65ImxvvpsPlpl8BFVDTFiSHI8QQTFNXzFn8/1H35q+zivNesCkOzvdog0MiB1UuOdnvbhc33E4XUs0Mt7rbkkjBiFpIdVXPS2qh57S+iD3X8C45UOmHYqODzLg6yf/7cnPCTauHeD4MpNSzqbUQ+JXNyYJTmGlJYzLVFREREKakrxXSJRY0WzV2DXD5gbZUxgu7BkmxHuP0tTwNN9oYrWAeKWCTuwomq6ghaPfCUie2prIZtTWTbS2P8034mn/PaLzi2pZ8I3UkMKhUdxtFR4TgYLqRW5Zc6Hryn9P/ZTF5Og19AyZNZAGnZVLOGv7CK35GaWwY/SG
+
+%URL%
+https://lutris.net
+
+%LICENSE%
+GPL-3.0-or-later
+
+%ARCH%
+any
+
+%BUILDDATE%
+1734455132
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+lutris
+
+%PROVIDES%
+lutris
+
+%DEPENDS%
+cabextract
+curl
+glib2
+gnome-desktop
+gtk3
+hicolor-icon-theme
+mesa-utils
+p7zip
+psmisc
+python-cairo
+python-certifi
+python-dbus
+python-distro
+python-gobject
+python-lxml
+python-moddb
+python-pillow
+python-requests
+python-yaml
+unzip
+webkit2gtk-4.1
+xdg-desktop-portal-impl
+xdg-utils
+xorg-xrandr
+
+%OPTDEPENDS%
+fluidsynth: For games that have MIDI music
+gamemode: Allows games to request a temporary set of optimisations
+gamescope: Draw the game window isolated from your desktop
+gvfs: GVFS backend
+innoextract: Extract Inno Setup installers
+lib32-gamemode: Allows games to request a temporary set of optimisations
+lib32-glibc: for 32bit games support
+lib32-mangohud: Display the games' FPS + other information
+lib32-vkd3d: DirectX 12 support
+lib32-vulkan-icd-loader: Vulkan support
+libayatana-appindicator: tray icon support
+linux-steam-integration: start Steam with LSI
+mangohud: Display the games' FPS + other information
+python-evdev: Controller support
+python-pefile: Extract icons from Windows executables
+python-protobuf: BattleNet integration
+python-pypresence: Discord Rich Presence integration
+umu-launcher: For running games through Proton
+vkd3d: DirectX 12 support
+vulkan-icd-loader: Vulkan support
+vulkan-tools: Vulkan support
+wine: easiest way to get all the libraries missing from the Lutris runtime
+winetricks: use system winetricks
+
+%MAKEDEPENDS%
+git
+meson
+protobuf
+
+%CHECKDEPENDS%
+appstream-glib
+python-pytest
+

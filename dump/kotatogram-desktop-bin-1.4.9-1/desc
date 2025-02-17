@@ -1,0 +1,56 @@
+%FILENAME%
+kotatogram-desktop-bin-1.4.9-1-x86_64.pkg.tar.zst
+
+%NAME%
+kotatogram-desktop-bin
+
+%BASE%
+kotatogram-desktop-bin
+
+%VERSION%
+1.4.9-1
+
+%DESC%
+Experimental Telegram Desktop fork with option to select custom fonts. - Static binaries
+
+%CSIZE%
+81817177
+
+%ISIZE%
+82816030
+
+%SHA256SUM%
+000ad61813805c86dcf848433405d09a38697625b463404a265f255ba954fd7f
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmJMD/sACgkQ87YHSI2zWkdbIwv9GtVd/PH2nhIEzKQ2pvOSKXGhuD2SxtiXk7vl84hOvD0kFi0ULXeigLKGKE2Xkqj7t6ZerStvbG6wY1XZz48Jv6WLdRhhyIcRUTP+KZOAJvokmZ5grGt/Q3W9pz9KdcjSw00W1ck1OxO5gbuj0FMac3V8i7vwlQVtnKASYlFIbcBGZB2MrVAw3hT+nYYjci6TNqn3FFT+RhB6b1iwVHC/fGj7IVO0yIFAI4az2/hT8thCuCAD3NxgdJUVGk8nT4RreYRP7WXo6TsspQa3oT66Fc9WLiFJtmaHxIEcBWh/K01qpUPnK3BBxh6Sc38M+t8CMTkEoqfWpCeh0GqRg3Q1DG1g2b3fXFCzQCQhUki9pwSnEEwIcbWQ7nq3SnNwV3przFsyaV9pOglAexAMf6hF5Eit+ny5wM+JAi4FJwcpkJ73MH7T2+McqXX7kd0sVyO+t/a6DGcz1gcij+Raa0sPZ1li4+2w7WSnXKbTOoDjBMoFx+Z4x1DGN42dU2/ryY+N
+
+%URL%
+https://github.com/kotatogram/kotatogram-desktop
+
+%LICENSE%
+GPL3
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1649151959
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+kotatogram-desktop
+kotatogram-desktop-dynamic-bin
+
+%PROVIDES%
+kotatogram-desktop
+
+%DEPENDS%
+fuse
+
+%OPTDEPENDS%
+xdg-desktop-portal: for native file dialogs, do not forget to install one of backends
+xdg-utils: for automatic opening of URLs, files and directories in proper applications
+

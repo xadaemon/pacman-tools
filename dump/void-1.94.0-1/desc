@@ -1,0 +1,71 @@
+%FILENAME%
+void-1.94.0-1-x86_64.pkg.tar.zst
+
+%NAME%
+void
+
+%BASE%
+void
+
+%VERSION%
+1.94.0-1
+
+%DESC%
+Void is the open-source Cursor alternative.
+
+%CSIZE%
+101100163
+
+%ISIZE%
+416290776
+
+%SHA256SUM%
+ede71e1aaae24c548da08e27449b0549229471d68ea1fab95ec255652b8a0ab6
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmd7CuAACgkQ87YHSI2zWkdtygv/d6GrQ4XJ2xHexF63Za/ZWpj/zOVGx6sYxi+IIWVCv7wZcWg3cW+PwiC7O7Du6TVE8axBEtbUeGlWKkh04wE+3V2DBX5LGR1q7ah279jRqGVSoViHd+ca65/ADKr6KfevD4wFwhAaH7BGcfPG9M1zsP5cf5SQaUZKo8csA4TAX1EoQGz0Wt8dqMX2qIhdD83nE+4NU6p5UmQwoHqz3WQbOUBFZwA8p3Wj+4drqbZBlYh5c7y5742QMpjyymwsUtcipMYqqsA6VdYwntGLrpqZDpPwgCj+LSRqmI2pX2beeMLDwHcVF1WRIr2hD0MkcdXNNtwyRaPA8L7YBx7WvzZRn6x/FshfkAvpPwLqKGr2b9yTAncryB6fDK2ArgqJa5gomFP60+OCFYLOSkqSBybsiSzN9SIvUOoutB5x2Y3jizi38BS1e8gL9GP6Xcq8jqkcI3TiIgPuTXf2SnY3rLJxTc+nHt354CyeOzo8I8MlWN8EurjZ4X8FKlGFgqij398A
+
+%URL%
+https://voideditor.com/
+
+%LICENSE%
+MIT
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1736115489
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+libx11
+libxkbfile
+libsecret
+gnupg
+gtk3
+nss
+gcc-libs
+libnotify
+libxss
+glibc
+lsof
+shared-mime-info
+xdg-utils
+alsa-lib
+
+%OPTDEPENDS%
+glib2: Needed for move to trash functionality
+gvfs: For move to trash functionality
+libdbusmenu-glib: For KDE global menu
+org.freedesktop.secrets: Needed for settings sync
+icu69: Needed for live share
+
+%MAKEDEPENDS%
+nodejs
+npm
+pkg-config
+python
+

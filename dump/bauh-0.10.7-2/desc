@@ -1,0 +1,88 @@
+%FILENAME%
+bauh-0.10.7-2-any.pkg.tar.zst
+
+%NAME%
+bauh
+
+%BASE%
+bauh
+
+%VERSION%
+0.10.7-2
+
+%DESC%
+Graphical interface for managing your applications (AppImage, Flatpak, Snap, Arch/AUR, Web)
+
+%CSIZE%
+996280
+
+%ISIZE%
+6421429
+
+%SHA256SUM%
+c296934cb2121ac4cb345dbc64e346eae392feb59d119a2bde09a6ee057f3a85
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmdhrRMACgkQ87YHSI2zWkeKLQv/Xw1IW6ruMWUcHaDUYt9jDD4Rdk9kTpTVtzc6EWba4gXbi5DsqdSjTPsR9NqgdqKrXjLNOAtbDjSLED1MpHCwDfeTt2R9kscRhZ6WFuGUi0DvDdi64S7PhE4/EE+MnvDfGotbWwcgFfEb0VKUOP1Q+dfP9PTYazU2Rb1aHm6ETsAIRUM9ID+lVxICCoS0IPlEoOVTG9ZdEO0J2H5TQZONidly1J9oae/m4vMuCTgG/fzt+6rSX3h+tc1TpoCmd+6k9C6uN1dE+0f15eczrK9DBbmp5hzePScLSWtV8O/iqelrH7RQo35D63rYnoXVXMHk5h4WJQZ1VgSN5qPnJwWlWYwZSS6r+IsVWFydw8g9/N4LMs6a3HkMfMo/aUN/2zcAr2+sxEahD8OJOc3Ujp5lK5Jxof8fWwiQ8jlxVEPUKi4UTQ6WrKbFCYGDVLdv1lVWl5RPGJyjTCvBD31Zppq2V7Grx89O5B/IwV9qRnVr1wPNbuXSn3zcDyWQLD3hQ82u
+
+%URL%
+https://github.com/vinifmor/bauh
+
+%LICENSE%
+zlib/libpng
+
+%ARCH%
+any
+
+%BUILDDATE%
+1734454534
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+python
+python-pyqt5
+python-pyqt5-sip
+python-requests
+python-colorama
+python-pyaml
+qt5-svg
+python-dateutil
+
+%OPTDEPENDS%
+flatpak: required for Flatpak support
+snapd: required for Snap support
+python-beautifulsoup4: for Native Web applications support
+python-lxml: for Native Web applications support
+sqlite3: required for AppImage support
+fuse2: may be required for AppImage support
+fuse3: may be required for AppImage support
+pacman: required for AUR support
+binutils: required for AUR support
+git: required for AUR support
+rebuild-detector: enables rebuild checking for AUR packages (optional)
+autoconf: may be required to compile some AUR packages
+automake: may be required to compile some AUR packages
+bison: may be required to compile some AUR packages
+fakeroot: may be required to compile some AUR packages
+flex: may be required to compile some AUR packages
+gcc: may be required to compile some AUR packages
+m4: may be required to compile some AUR packages
+lib32-fakeroot: may be required to compile some AUR packages
+make: may be required to compile some AUR packages
+patch: may be required to compile some AUR packages
+pkgconf: may be required to compile some AUR packages
+ccache: can improve AUR packages compilation speed
+aria2: multi-threaded downloading support
+breeze: KDE Plasma main theme
+axel: multi-threaded downloading support
+shadow: to install AUR packages as the root user
+util-linux: to install AUR packages as the root user
+
+%MAKEDEPENDS%
+python-build
+python-installer
+python-wheel
+python-setuptools
+

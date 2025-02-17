@@ -1,0 +1,275 @@
+%FILENAME%
+vlc-luajit-3.0.21-9-x86_64.pkg.tar.zst
+
+%NAME%
+vlc-luajit
+
+%BASE%
+vlc-luajit
+
+%VERSION%
+3.0.21-9
+
+%DESC%
+Multi-platform MPEG, VCD/DVD, and DivX player built with luajit for OBS Studio compatibility
+
+%CSIZE%
+11624837
+
+%ISIZE%
+60398117
+
+%SHA256SUM%
+992d866bd983b1039b159f975230806c2f4061014c9dc4da77abba14da4bf803
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmekdhIACgkQ87YHSI2zWkeSLAwAh21gS/PgHWMVbavWVLz9jUP5d5gONwddQFo+F00Cjr/5+2DKtT6/nAIVz3YwHyP3zSfjhgfsYO7041swLA4yF2YERNQazp4Daw9osOpdAKDQdaUVUaMDBLvlvMWVh8BZl4p7rK31aBRn45e4VN/6go3cosk2slA4xKeCCYjJrHPM4CrYhi/4is0/qQ9Ir1DeHcK1qwvHrkQJU/1bAY6RITeTGqhf/MBVAdZ3SgJqHlci+nN3BzDEl6C7jRlFE+bxPSICVQslmMdBkfo9UauoNYlKHVv3Fj4azd91REU8D6WZBICVo9xyCHyd609gWsDAQh6aVb7mUoPyqwoSmrNIQWwr3ykMhg7nJ46uEjnBTZNbfk3VmJ0GIE165+pdXqoUejW3xGIZbw014tAQD3gJ+nsclVn58KLY4HsiDfv2XlWPgIrIOku+cy/kzHa7I/uyk5pCgznD88duCJrPRLHRXF2FaQhdFk0YvPpidCl+MmoGyyMOCopVrT6VBXQQu37e
+
+%URL%
+https://www.videolan.org/vlc/
+
+%LICENSE%
+GPL-2.0-or-later
+LGPL-2.1-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1738831260
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+vlc
+vlc-dev
+vlc-plugin
+vlc-stable-git
+
+%PROVIDES%
+vlc=3.0.21
+
+%DEPENDS%
+a52dec
+abseil-cpp>=20240722
+aribb24
+bash
+cairo
+dbus
+faad2
+ffmpeg>=7
+fontconfig
+freetype2
+fribidi
+gcc-libs
+gdk-pixbuf2
+glib2
+glibc
+gnutls
+harfbuzz
+hicolor-icon-theme
+libarchive
+libdca
+libdvbpsi
+libglvnd
+libidn
+libmad
+libmatroska
+libmpcdec
+libmpeg2
+libproxy
+libsecret
+libtar
+libupnp>=1.14
+libvlc-luajit
+libx11
+libxcb
+libxinerama
+libxml2
+libxpm
+lua
+qt5-base
+qt5-svg
+qt5-x11extras
+taglib>=2
+wayland
+xcb-util-keysyms
+zlib
+luajit
+
+%OPTDEPENDS%
+aalib: ASCII art video output
+alsa-lib: ALSA audio output
+aom: AOM AV1 codec
+aribb25: aribcam support
+avahi: service discovery using bonjour protocol
+dav1d: dav1d AV1 decoder
+flac: Free Lossless Audio Codec plugin
+fluidsynth: FluidSynth based MIDI playback plugin
+gnu-free-fonts: subtitle font
+gst-plugins-base-libs: for libgst plugins
+gstreamer: for libgst plugins
+gtk3: notification plugin
+jack: jack audio server
+kwallet: kwallet keystore
+libass: Subtitle support
+libavc1394: devices using the 1394ta AV/C
+libbluray: Blu-Ray video input
+libcaca: colored ASCII art video output
+libcdio: audio CD playback
+libdc1394: IEEE 1394 access plugin
+libdvdcss: decoding encrypted DVDs
+libdvdnav: DVD with navigation input module
+libdvdread: DVD input module
+libgme: Game Music Emu plugin
+libgoom2: Goom visualization
+libjpeg-turbo: JPEG support
+libkate: Kate codec
+libmodplug: MOD output plugin
+libmicrodns: mDNS services discovery (chromecast etc)
+libmtp: MTP devices discovery
+libnfs: NFS access
+libnotify: notification plugin
+libogg: Ogg and OggSpots codec
+libpng: PNG support
+libpulse: PulseAudio audio output
+libraw1394: IEEE 1394 access plugin
+librsvg: SVG plugin
+libsamplerate: audio Resampler
+libshout: shoutcast/icecast output plugin
+libsoxr: SoX audio Resampler
+libssh2: sftp access
+libtheora: theora codec
+libtiger: Tiger rendering for Kate streams
+libvorbis: Vorbis decoder/encoder
+libvpx: VP8 and VP9 codec
+lirc: lirc control
+live-media: streaming over RTSP
+mpg123: mpg123 codec
+ncurses: ncurses interface
+opus: opus codec
+pcsclite: aribcam support
+projectm: ProjectM visualisation
+protobuf: chromecast streaming
+sdl12-compat: SDL image support
+sdl_image: SDL image support
+smbclient: SMB access plugin
+speex: Speex codec
+speexdsp: Speex codec
+srt: SRT input/output plugin
+systemd-libs: udev services discovery
+ttf-dejavu: subtitle font
+twolame: TwoLAME mpeg2 encoder plugin
+vcdimager: navigate VCD with libvcdinfo
+x264: H264 encoding
+x265: HEVC/H.265 encoder
+zvbi: VBI/Teletext/webcam/v4l2 capture/decoding
+
+%MAKEDEPENDS%
+a52dec
+aalib
+abseil-cpp>=20240722
+alsa-lib
+aom>=3
+aribb24
+aribb25
+avahi
+bash
+cairo
+dav1d
+dbus
+faad2
+ffmpeg>=7
+flac>=1.4.0
+fluidsynth
+fontconfig
+freetype2
+fribidi
+gcc-libs
+gdk-pixbuf2
+glib2
+glibc
+gnutls
+gst-plugins-base-libs
+gtk3
+harfbuzz
+hicolor-icon-theme
+jack
+libarchive
+libass
+libavc1394
+libbluray
+libcaca
+libdca
+libdc1394>=2.2.7
+libdvbpsi
+libdvdcss
+libdvdnav
+libdvdread
+libglvnd
+libgme
+libgoom2
+libjpeg-turbo
+libkate
+libmad
+libmatroska
+libmicrodns>=0.2
+libmodplug
+libmpcdec
+libmpeg2
+libmtp
+libnotify
+libnfs>=6
+libogg
+libpng
+libproxy
+libpulse
+librsvg
+libsamplerate
+libsecret
+libshout
+libsoxr
+libssh2
+libtar
+libtheora
+libtiger
+libupnp>=1.14
+libvorbis
+libvpx>=1.14
+libx11
+libxcb
+libxinerama
+libxml2
+libxpm
+lirc
+live-media>=2024.04.19
+lua
+mesa
+mpg123>=1.32.2
+opus
+pcsclite
+projectm
+protobuf>=29.2
+qt5-base
+qt5-svg
+qt5-x11extras
+sdl_image
+smbclient
+speex
+srt>=1.5
+systemd-libs
+taglib>=2
+twolame
+vcdimager
+wayland
+wayland-protocols
+x264>=0.164
+x265>=4
+xcb-util-keysyms
+xosd
+zlib
+zvbi
+luajit
+lua51
+

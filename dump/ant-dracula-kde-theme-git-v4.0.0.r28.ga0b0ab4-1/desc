@@ -1,0 +1,52 @@
+%FILENAME%
+ant-dracula-kde-theme-git-v4.0.0.r28.ga0b0ab4-1-any.pkg.tar.zst
+
+%NAME%
+ant-dracula-kde-theme-git
+
+%BASE%
+ant-dracula-kde-theme-git
+
+%VERSION%
+v4.0.0.r28.ga0b0ab4-1
+
+%DESC%
+Ant Dracula theme for KDE Plasma
+
+%CSIZE%
+963657
+
+%ISIZE%
+1837426
+
+%SHA256SUM%
+9e453b6e4b471a150078fc3248df21b118491a4993bd6739e930d9f3b4052741
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmUtkx8ACgkQ87YHSI2zWkfmyQv/Xi303kszoz8IgFpRjsrwa0HH7ZNYLsOmrA4HhMbIdFxNwhAiImzAQmj72RhoHBBqVKBLaYpc68n329Ao5ewLto+G08981NqJF/dPRjWsRON329HPfNzLdjIwMorGyWurI12mooTUC3QbCDVBPysg00zg23yIeo0xtzVDNWXYkpDDok+QHAvafAvKdMdvJWH8ijUdA+0o1viur1ix3HiRG0HOSufjcp2oCizI54yRsK0iI1aZhRUxP+QDKIfpdM7HT0PSxFgqwyEfNRWid6j2gh+T516X9tJSmovo5J2BfbeOsodcjWBvfXdEWpgJuFLcw3Qt9SJcQ6G6K+/FAVrHFwEz2awehoogDw3Os4510BtTnNj1yLSSe84cnx5+dQXmvPKdwx3IFJZUIpN4wLeb1L1PgKSReubdEeZf6cGT+smVEZcttzARsvAOjuE9Fm8y5hsJ/KmdoEueeiJqcaLv/qhw7xA6d14qBizqaBXlqsg/iUHLmxnBV8Lf4HpbIVbV
+
+%URL%
+https://github.com/dracula/gtk
+
+%LICENSE%
+GPL3
+
+%ARCH%
+any
+
+%BUILDDATE%
+1697485591
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%PROVIDES%
+ant-dracula-kde-theme
+
+%OPTDEPENDS%
+ant-dracula-gtk-theme: Matching GTK theme
+ant-dracula-kvantum-theme-git: Ant Dracula theme for Kvantum Qt style (recommended)
+
+%MAKEDEPENDS%
+git
+

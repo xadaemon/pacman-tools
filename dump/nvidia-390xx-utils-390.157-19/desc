@@ -1,0 +1,64 @@
+%FILENAME%
+nvidia-390xx-utils-390.157-19-x86_64.pkg.tar.zst
+
+%NAME%
+nvidia-390xx-utils
+
+%BASE%
+nvidia-390xx-utils
+
+%VERSION%
+390.157-19
+
+%DESC%
+NVIDIA drivers utilities
+
+%CSIZE%
+20629208
+
+%ISIZE%
+111811325
+
+%SHA256SUM%
+8e0eb298afa9016f2625ef5b68204a5f28c9e305003d7f93faebc2da5ab1f87c
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmeg3isACgkQ87YHSI2zWkezBQwA9WB1+cLImbul0hq1hp7RN26vk7LhfC+gpHDvAuMy/e6yLKv6XVs7GCwDtVEzAcoOJFdAZ2wgfFJqGcZOWte/XLCCCth1pH1Squ1jL4bFFEnWbZjQVoK4ojeU3U4TsUGotG9JcwqxDvtDd+rD9969FV4BWecI+YGXGen7YovOqeefq2gO2/b4DL0w2xqIK552Swx3g8B1ETvkAOOLDr8Nlj/2mrMznLRKbV4ZqtAGyVSkKOhalZIMJVNhUrk9KWzCNN1y3r4CZXmmWUfsGcVQ2+b09xARnkTCnhysscYEGColwEcrvYb20VrxdQ5BoiQcvMOcSiA+z1/L7sz6A9Ng9R4cmGV6cRiw4QMRr68L6+0DuISiADFN1stFBAjhLqZnYbVb6CGN8DHdVWT5Z0dcZiJqofiL2C7fGmTzDHc+Ak9UYraVtY1co489OgBjAP7O4+R8YXd62F8o9/JOFNdssZTjmigQZfWPJqHYGTsxntgQUL8tqsRIvAehK+nhO/+o
+
+%URL%
+https://www.nvidia.com/
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1738595776
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+nvidia-libgl
+nvidia-utils
+nvidia-390xx-libgl
+
+%PROVIDES%
+vulkan-driver
+opengl-driver
+nvidia-libgl
+nvidia-utils
+nvidia-390xx-libgl
+
+%DEPENDS%
+xorg-server
+libglvnd
+egl-wayland
+
+%OPTDEPENDS%
+nvidia-390xx-settings: configuration tool
+xorg-server-devel: nvidia-xconfig
+opencl-nvidia-390xx: OpenCL support
+

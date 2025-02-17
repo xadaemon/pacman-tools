@@ -1,0 +1,61 @@
+%FILENAME%
+electron24-bin-24.8.8-4-x86_64.pkg.tar.zst
+
+%NAME%
+electron24-bin
+
+%BASE%
+electron24-bin
+
+%VERSION%
+24.8.8-4
+
+%DESC%
+Build cross platform desktop apps with web technologies — prebuilt
+
+%CSIZE%
+75394528
+
+%ISIZE%
+249602530
+
+%SHA256SUM%
+186a943212d73987b4b447b4b0e7581785659427a1eff04cd852c44be6a85fbd
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmbHFs8ACgkQ87YHSI2zWkfQ9wwAt/Br1TSZ+um/IauzsPhQz8+WPPc9A2gO9bAMueOKPA3F0Qv6ILTi0SgvNjytGk1Xfhe+kgBo0E0vwBbVKHWSi0L0bTYVncy8JgW1Zw/vucaoTXJ3DIVjyJoLKU5r2J4BGK7uSaheJdUMjEvh3G5/PAbR5tDbz2UNbYmsHvwwaY1RC4y3RlM8vRsAxxEOVQtZ6lPDgpR3IgXaVcT/oihFhNZjcn/CJiAseL162CiYGU0HHAeJaDpXFFutz3X3gBtaeHLbgMXmSK6WAvYkCqFRWtxNTDk7T1OLviceYD7qQuXiekCYsMaupZy6njdIWeYyEroSXcvBdQls9Lr1P9e0gV0KBgPOIA+HXx57oTIXCBfEBGaY5NnOPLPcaPemRB/NuKk7K8RoBHnXOufBElk8ilEJ4Mq2FzFb6JvsT4tjWgaou+O5H9t109/3y/naE8HHpGjGL6GIahtFugXAEXk6KYetMxVC6y5Kdtx77Z6JYsIyqavGyWJrdtxLQMfj4aOY
+
+%URL%
+https://electronjs.org
+
+%LICENSE%
+MIT
+LicenseRef-custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1724323482
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+electron24
+
+%PROVIDES%
+electron24=24.8.8
+
+%DEPENDS%
+alsa-lib
+gtk3
+nss
+
+%OPTDEPENDS%
+kde-cli-tools: file deletion support (kioclient5)
+pipewire: WebRTC desktop sharing under Wayland
+qt5-base: enable Qt5 with --enable-features=AllowQt
+trash-cli: file deletion support (trash-put)
+xdg-utils: open URLs with desktop`s default
+

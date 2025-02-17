@@ -1,0 +1,105 @@
+%FILENAME%
+krusader-git-2.10.0.dev.r7215.gd75227e37-1-x86_64.pkg.tar.zst
+
+%NAME%
+krusader-git
+
+%BASE%
+krusader-git
+
+%VERSION%
+2.10.0.dev.r7215.gd75227e37-1
+
+%DESC%
+Advanced twin panel file manager for KDE. (GIT version)
+
+%CSIZE%
+4240532
+
+%ISIZE%
+16413444
+
+%SHA256SUM%
+8dd99701914ac9c4ef45e8d47be704d998b19171e8c14b85aaf73ce27d5a4559
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmeqDkYACgkQ87YHSI2zWkfUxgv/eT6wqu7OXlxFUUwXAdSTMyBshFG9zYPQIZwiEg5RWfQoi9YotfuMXxXBlPiPL6MsUwiAMldnyqLgVugOV2AxuIQ9Z9ZGy4yKUYYYXdju/wWJ9gcSsSd2nErWuCPSV9zS441vbLrsApcEFW35L9BgG0AhfK/DHq9W8fYfJDAktNkUMbV8tCNdtseABO/XzsNYTWrcyZlE9ppUWYBZL7GmVf1fMH7cLsKZeCj8obkn/9vrws9jODTaA4+fM+fVbK9C7Wx0MlhbWLag8YsSEuTD+qUTZxKZX295JEFlpO5+Co7ZW+GVxr3XyPna8YvFLgiEP14cFINBe7J6St1KKJPCz7CemSJ638bloedNDoAzZIavR/psR1ocmWT+omsVyvdkkFQuvL3u8t89Ero/54WaVjp1Y8KNO4AdcdX7WnqjERwfbfkZ3aWfD5pc0GMG+4B+sZGn1mpp3I0WsmdqQMauXH8mJ67eY9AQjIwcbQlJtnObPn+5k0GxVIq3elP46Rw0
+
+%URL%
+http://www.krusader.org
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1739197961
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+krusader
+
+%PROVIDES%
+krusader
+
+%DEPENDS%
+acl
+gcc-libs
+glibc
+karchive
+kbookmarks
+kcodecs
+kcolorscheme
+kcompletion
+kconfig
+kconfigwidgets
+kcoreaddons
+kcrash
+kglobalaccel
+kguiaddons
+ki18n
+kiconthemes
+kio
+kitemviews
+kjobwidgets
+kparts
+kservice
+kstatusnotifieritem
+ktextwidgets
+kwallet
+kwidgetsaddons
+kwindowsystem
+kxmlgui
+qt6-5compat
+qt6-base
+solid
+zlib
+
+%OPTDEPENDS%
+xz: LZMA and XZ archive support
+unzip: ZIP decompression support
+zip: ZIP archive support
+lhasa: LHA archive support
+cpio: cpio archive support
+unrar: RAR decompression support
+arj: ARJ archive support
+unarj: ARJ decompression support
+unace: ACE decompression support
+7zip: 7z archive support
+keditbookmarks: Manage Bookmarks functionality
+kde-cli-tools: manage file associations, root mode
+kompare: file contents comparison
+kdiff3: file contents comparison
+krename: advanced rename tool
+konsolepart: terminal
+ktexteditor: file editing support
+
+%MAKEDEPENDS%
+extra-cmake-modules
+kdoctools
+git
+

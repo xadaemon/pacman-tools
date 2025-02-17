@@ -1,0 +1,68 @@
+%FILENAME%
+nvidia-utils-570.86.16-1-x86_64.pkg.tar.zst
+
+%NAME%
+nvidia-utils
+
+%BASE%
+nvidia-utils
+
+%VERSION%
+570.86.16-1
+
+%DESC%
+NVIDIA drivers utilities
+
+%CSIZE%
+282001545
+
+%ISIZE%
+827109374
+
+%SHA256SUM%
+689ad7511b4a713f920ce6512c2dbf07508c44819d6b0ab842d2c2718a09522e
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmecd5AACgkQ87YHSI2zWkdTSQwAtjYAQbJJ6u7x+3KGFBKGZT3ePzy536hNLgjj25NhTYjkXbMPbjm4CZUPwDB3Ij7VxRP3P1kWO79Ua8Dk+7SS9aCFivgP/jlrZjVvpn7t4uaaTRerHgu6NjW+f4EVE/b031CO0Kk0vCSGFiKk7s1WQEZ3JyFnLfVWxhNepj0hq7kOa5u4l67uYVrzYTjAhfaHlSp6yCUZ3O6si2O0u7oxPBKF22sVEJfrIQQWVyHeT9sL3Wmw9h3jU8jjQSj5IjCVucsNbV83wxZVnGtNYVKZ6i6nCPj+F9CGYN98dqJ8V2UYMWZPUe2JoZXIZr4gSty3C/NY1SXUumatjCAbAEzyv2F+mRlFz2ibcd5zk+I2J7VVrIGVmN4srAOiGKyYH3oCL5k5gxm/3TjYH0C6qHdY5SsFmeS6xBVoeEJn9QT4d4bcDbUMjR84YI61zq/0Z1vNW5c2JIQFNHCRB6icHi62TKaU+qWFnnMXoEdB0sfQEUq5IulwMa+76h9GW4QQyPOD
+
+%URL%
+http://www.nvidia.com/
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1738307276
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%REPLACES%
+nvidia-libgl
+
+%CONFLICTS%
+nvidia-libgl
+
+%PROVIDES%
+vulkan-driver
+opengl-driver
+nvidia-libgl
+
+%DEPENDS%
+libglvnd
+egl-wayland
+egl-gbm
+egl-x11
+
+%OPTDEPENDS%
+nvidia-settings: configuration tool
+xorg-server: Xorg support
+xorg-server-devel: nvidia-xconfig
+opencl-nvidia: OpenCL support
+
+%MAKEDEPENDS%
+patchelf
+

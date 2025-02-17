@@ -1,0 +1,65 @@
+%FILENAME%
+zen-browser-bin-1.7.6b-1-x86_64.pkg.tar.zst
+
+%NAME%
+zen-browser-bin
+
+%BASE%
+zen-browser-bin
+
+%VERSION%
+1.7.6b-1
+
+%DESC%
+Performance oriented Firefox-based web browser
+
+%CSIZE%
+85363391
+
+%ISIZE%
+313867202
+
+%SHA256SUM%
+ec375ae27c93b341dca5e81b3726fde1451018d23975884fbb7bb7a570e8151a
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmepuncACgkQ87YHSI2zWkd9qgwApap27e5mUOYxeEFR+RlWfrdWqO6owF/spwVwvsg0jmGCIc9frc0cRVOj0pC/+cHNh0ayEANvqJLuNj5te7PE95unwHXQukFpYqT6ERT0uHjxVsvOOLbyq3JpMu3Q5GFYCyHQoGhiS5tXnAMDx/M+z6Vc3uue2i5sLcGUmXgK7Db6TiTwOKY98EcJArf6DnsARZY2ePJairRIRSMyRdDKTrjvjhWFrVo+Dwa1zsf29K+FTpfK+Lf8l2OI4ZEF6EbsJLJEEOaeiDuQ63VGxqSfowmEZhm7cJBZ+ar3uBeywlBIuAj7TeTJS7MTZtoSt00okVe8ZwVs1V+6W5pUYCBKiwjSdDiJMMvePPofRpy6HQpmpCn6pBIXvS8ct0+GH3Ln5TyqVHtjjYuypOzq4J0O+tpYTwoPXl04VzdolaIp2t7UW2m7Yd53rFke8A0TjTsjWqmbMg098Zku8ZvrHRmjuBS6wR2TaOd7QshStqHQ6RCfB8eJnOrzOkBu/98+R93F
+
+%URL%
+https://github.com/zen-browser/desktop
+
+%LICENSE%
+MPL-2.0
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1739176508
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+zen-browser
+
+%PROVIDES%
+zen-browser=1.7.6b
+
+%DEPENDS%
+gtk3
+libxt
+mime-types
+dbus-glib
+nss
+ttf-font
+systemd
+
+%OPTDEPENDS%
+ffmpeg: H264/AAC/MP3 decoding
+networkmanager: Location detection via available WiFi networks
+libnotify: Notification integration
+pulse-native-provider: Audio support
+speech-dispatcher: Text-to-Speech
+hunspell-en_US: Spell checking, American English
+

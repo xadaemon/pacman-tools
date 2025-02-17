@@ -1,0 +1,73 @@
+%FILENAME%
+octopi-0.16.2-2-x86_64.pkg.tar.zst
+
+%NAME%
+octopi
+
+%BASE%
+octopi
+
+%VERSION%
+0.16.2-2
+
+%DESC%
+A powerful Pacman frontend using Qt libs
+
+%CSIZE%
+1395751
+
+%ISIZE%
+6589143
+
+%SHA256SUM%
+b159268496b17af86fee7b20f563b27ffa61147c238edbeb9580fbf82329011f
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmblgiEACgkQ87YHSI2zWkdOiwv+MswtRpjvokG6yOLYypY6LA80YJILY4NWTjrRsus5x3H14+/b3J6cUQTt/RahMSH3NwXpvluXlzKhKoaJhYlaz68PA7aD8GyJaQ0RVB+ZFnuWSB3IrSmoNZXisoI/66DteA++8X9+WmPYzFbKI0a8/D/SJ2eQojz0WCfpKBF2ZqkGXzzNne6g86L0+je7ATDgiLkTar/1C+U/X7VPWWzs0oBewTtXEsjEBJFY6C90WxWQiAJPQSGx0IRqgMOyRyItNUKfhr9n67LK2dBQAbmlimR3S3sb1HfPjATaAUAbpmwWT03y+eY6Db3OlA/t6oXi8vW26+SXxEdeeGTh+DPmPJQFiELdGqjLsPUNSMDPWIezR6dshE8PmmVIkbRoNu2t2CuIDjvCVNv6n8tun4VrkIr8vWpuHmgifTIUQ9O25wMnaCwt0X0XmGx4aSJ3dXdsU1JK3Mv4VthxneS7J1IkZtbwH+02jyRxZ0zUQNZJelx0cI5yOikdBwXvwCFY0k3S
+
+%URL%
+https://tintaescura.com/projects/octopi
+
+%LICENSE%
+GPL-2.0-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1726317055
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+octopi-notifier
+
+%PROVIDES%
+octopi-cachecleaner
+octopi-notifier
+octopi-repoeditor
+
+%DEPENDS%
+alpm-octopi-utils
+qt-sudo
+qt6-5compat
+qtermwidget
+
+%OPTDEPENDS%
+inxi: for SysInfo log
+lsb-release: for SysInfo log
+mhwd: for SysInfo log
+pacaur: for AUR support
+pacmanlogviewer: to view pacman log files
+paru: for AUR support
+pikaur: for AUR support
+systemd: for SysInfo log
+trizen: for AUR support
+yay: for AUR support
+
+%MAKEDEPENDS%
+cmake
+git
+qt6-tools
+

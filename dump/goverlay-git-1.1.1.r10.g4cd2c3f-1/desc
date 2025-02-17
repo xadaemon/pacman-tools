@@ -1,0 +1,68 @@
+%FILENAME%
+goverlay-git-1.1.1.r10.g4cd2c3f-1-x86_64.pkg.tar.zst
+
+%NAME%
+goverlay-git
+
+%BASE%
+goverlay-git
+
+%VERSION%
+1.1.1.r10.g4cd2c3f-1
+
+%DESC%
+A GUI to help manage Vulkan/OpenGL overlays
+
+%CSIZE%
+1781311
+
+%ISIZE%
+4794996
+
+%SHA256SUM%
+d222078e7f8e03889c1c4d01f69faabefb170cce5c49d9243e90e92849e0a2bd
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmZfQDcACgkQ87YHSI2zWkdfSwv+IsSSdaeg70ApX1w4I7KCXaPHo+QId0Gh1kWlfVI3ML73FZezlH8rPzCn1nJ24JFTd4HsvMMYKjoFqWqpAnxBEubCjc+2Mkus+GTRlnM6mald2c5Hms+M/i2tlg5aLof4y+o/NrGVczM/+n6tsW0WrifJj+JZpkve1AoVb8t39c5Xr3rWqwzaImEZ2cnxbo3O5PEG/uRdB3hoMl+zjVKDJpYR7/ljkvFbhrveZRfcqM6/FsIlO0pTY4dBkqW4/wtWB5JDz+t3x8XKSlDy1VW/czwUo6cqojDeyBIwlq65jWNBwWWAWwStjqPxTmlTxy/BSY1GBhbLpzB+eOKRCW4ZvyF1uPWDDQTY5CNVEsxdBR1yE5jfQUhPrw2Fxl/7vRXDpnFtKkW/780fFhIsOGhVKdM//oPTGXADxm8dE5J/DGaze2xZjVZIa2ZfN7KES4W99MnIA21JGfWUa9ARvCCL1AIytsjte+AASl9exrkJ2Q4ZLMHCdbT89JXCAPmadj3/
+
+%URL%
+https://github.com/benjamimgois/goverlay
+
+%LICENSE%
+GPL-3.0-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1717518359
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+goverlay
+
+%PROVIDES%
+goverlay
+
+%DEPENDS%
+glu
+mangohud
+qt6pas
+
+%OPTDEPENDS%
+mesa-utils: OpenGL preview
+ttf-dejavu: recommended font
+ttf-ubuntu-font-family: recommended font
+vulkan-tools: Vulkan preview
+
+%MAKEDEPENDS%
+git
+lazarus
+xmlstarlet
+
+%CHECKDEPENDS%
+appstream
+desktop-file-utils
+

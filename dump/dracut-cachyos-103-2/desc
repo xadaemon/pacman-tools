@@ -1,0 +1,111 @@
+%FILENAME%
+dracut-cachyos-103-2-x86_64.pkg.tar.zst
+
+%NAME%
+dracut-cachyos
+
+%BASE%
+dracut-cachyos
+
+%VERSION%
+103-2
+
+%DESC%
+An event driven initramfs infrastructure
+
+%CSIZE%
+459937
+
+%ISIZE%
+1450501
+
+%SHA256SUM%
+ffe428c763523cf355472209bfbf1eafba84b7e82310e9f5098c1d2c962e1b3b
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmadILUACgkQ87YHSI2zWkdQ0wwA1ra6VgLdMuokKbIDEfEt3O2XOUtyvHZ4j3uueg5pwxQx0HwN2oAFPG6lbWIW7UlV43qvIa/oHJ0P5obBi8ZuLu90RHAD/PNowp5Gmr0hIFxTLnQGX1ooIFIG3dA4kPOBk+6bXdYiGspxkUQntIbv955bffGDywVbrLA/u2PgKnJkCAVx61+lAXXzku2fV8fytSOnOrUa/2RNH9libDTyvrIPaFRyhlRyEZHy8nphhh3C6Vz7ggTlLC5vOlEsVtnB+tmoRVY70Wj1rrjoNV2CbKeZJaoKGNGbBPG9aeKlatuQWBB9H6Fz7L0dNK85P1U0ge700rh5PsVNaswSvr1vZlAMRyARF6Z5vwQV3YYkd7lyz7kdIXmltKVTllKIquyGdvndf5k1y90wDWCm65RqONihVds18ZvrNoUILPDc/33AfnWH6ccVNX4ZBx3GNag1Y4Io57t6YILdEV1Bx6FRATdPsHh5nEpY6SZmreWtcNQTl/UxJgIBZEK1yjT+982/
+
+%URL%
+https://github.com/dracut-ng/dracut-ng
+
+%LICENSE%
+GPL-2.0-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1721573547
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+dracut
+
+%PROVIDES%
+initramfs
+dracut=103
+
+%DEPENDS%
+bash
+coreutils
+cpio
+filesystem
+findutils
+gawk
+grep
+kmod
+pkgconf
+procps-ng
+sed
+systemd
+tpm2-tools
+util-linux
+
+%OPTDEPENDS%
+binutils: --uefi option support
+bluez: bluetooth (keyboard)
+btrfs-progs: scan for Btrfs on block devices
+busybox: allows use of busybox (on your own risk)
+bzip2: bzip2 compression
+cifs-utils: support CIFS
+connman: support for connman networking
+cryptsetup: support for encrypted with LUKS filesystems
+dash: allows use of dash (on your own risk)
+dhclient: legacy networking support
+dmraid: dmraid dracut module support
+e2fsprogs: ext2/3/4 filesystem support
+elfutils: strip binaries to reduce initramfs size
+f2fs-tools: fsfs filesystem support
+fuse3: live on NTFS (dmsquash-live-ntfs module)
+gzip: gzip compression
+iproute2: legacy networking support
+iputils: networking support
+lvm2: support Logical Volume Manager
+lzop: lzop compression
+mdadm: support MD devices, also known as software RAID devices
+multipath-tools: dmraid dracut module support
+nbd: support network block devices
+ndctl: NVDIMM support
+networkmanager: networkmanager support
+nfs-utils: support NFS
+ntfs-3g: live on NTFS (dmsquash-live-ntfs module)
+nvme-cli: NVMe-oF support (nvmf module)
+open-iscsi: support iSCSI (iscsi module)
+openssh: install ssh and scp along with config files and specified keys (ssh-client module)
+pigz: faster gzip compression
+plymouth: plymouth boot splash
+rng-tools: enable rngd service to help generating entropy early during boot
+sbsigntools: uefi_secureboot_cert/key configuration option support
+squashfs-tools: support for building a squashed initramfs
+tar: live tar image
+tpm2-tools: tpm2 support for e.g. LUKS
+xz: xz compression
+
+%MAKEDEPENDS%
+asciidoc
+bash-completion
+git
+rust
+

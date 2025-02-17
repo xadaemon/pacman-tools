@@ -1,0 +1,61 @@
+%FILENAME%
+electron27-bin-27.3.11-3-x86_64.pkg.tar.zst
+
+%NAME%
+electron27-bin
+
+%BASE%
+electron27-bin
+
+%VERSION%
+27.3.11-3
+
+%DESC%
+Build cross platform desktop apps with web technologies — prebuilt
+
+%CSIZE%
+79562041
+
+%ISIZE%
+264431300
+
+%SHA256SUM%
+734f03163dc45db406dd002198df9c18b0d9843bc85c701d38880e6d913fe24a
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmbHF8UACgkQ87YHSI2zWkd+Mwv/dDSyR9hF7niZ8RFxflAiKiIeHgMcnVrAecDZenTPT6qh4DuK5fRNy0nRjHn8J7D+COPcxHw0M9mcWw1n2a23EnNX9KkXi/imYWYdSDqsteyqKBDyD0GlUIKb+rSYHlPJoOeXTy5BTuSVTXW4rNUBd67nmjwcOie/1xzxNlc5Hx915IS900v7Y1Xs/wGCD2mTASYUAQHr2KWJSg504WVoOj+h8aJspiBRMyMO/sPgQR2m2I2m6e4xqNl4oei8Li+QGRJHOZwKENHtY00QTeHeIhSpptn3An+NGwZPLpU8rg/iJvd8qXsP/18MPOGiXuuA6+K+uV1dguyNchf2TQh7r2t74HwBdcjiH4rLD2NphFINVg5Mgv1eAb86nK/6IdxlhLSxXA+0+q2N0t7ryKY2i+qEOTZWfsneNddkZAx/e3pN26zTi1k965LxNefya1jwAe/V7T3rsRnvRZLP+YdIcCrMNI2H3n/ACKfzNLX1tx0WHngv1mgu5/M2RtJLghe+
+
+%URL%
+https://electronjs.org
+
+%LICENSE%
+MIT
+LicenseRef-custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1724323674
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+electron27
+
+%PROVIDES%
+electron27=27.3.11
+
+%DEPENDS%
+alsa-lib
+gtk3
+nss
+
+%OPTDEPENDS%
+kde-cli-tools: file deletion support (kioclient5)
+pipewire: WebRTC desktop sharing under Wayland
+qt5-base: enable Qt5 with --enable-features=AllowQt
+trash-cli: file deletion support (trash-put)
+xdg-utils: open URLs with desktop`s default
+

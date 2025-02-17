@@ -1,0 +1,67 @@
+%FILENAME%
+xwayland-run-git-0.0.4.r4.g3d0a384-1-any.pkg.tar.zst
+
+%NAME%
+xwayland-run-git
+
+%BASE%
+xwayland-run-git
+
+%VERSION%
+0.0.4.r4.g3d0a384-1
+
+%DESC%
+Utilities to run headless X/Wayland clients
+
+%CSIZE%
+20996
+
+%ISIZE%
+97358
+
+%SHA256SUM%
+3ba4a0393967a4cd2d36461184ba82a93875fe446f3110cb166710f18be2b58a
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmdhw6QACgkQ87YHSI2zWkd7ygwA7MdqD4Cn95AvTdyLsk81DAaIsCBs8PLOZk1liMNVP6w+G1IIRol8TmrJcZUGXrKr0xoEanwZ2gnlsSBFr1uqNYLIqLnLu3oqOH8/HlH5noL3KZrLBzuoxpOqCULcPcGWggd7NpfqHmgyhC/MMWZumNQx8n5wfMHBdZEvZXbj/7Av62ufrStXrzQN05ZhV7a2Ecb6ndtGQWUiZkQbn6VP6xbVSP/MrcMBea2cKjVhR7kAjo8S46yUacPmzPpC5rnSsfHonBGKsX4QkIv+LsxlmUD2l09dvL7wVmgO6Ew7KksuZENjNpWqrp3jIEL3lzS3XXe2d2qTv0jaKlNbNicESiFoUlFG9n9zx5uUL/vgopCoYtDEvyHnsCLGnYeNlTDL2c+bWH4A7W7nQT7EEb/H33W4Anc0c+N/79PwxE/oLrWajk50mcWbU70cQmVdRu8WO1+ZmO6Lc7VuelI6wQgHKiherSxvETpCfz/KAShzDQEJ+HHbzu6oWpeYO0cAS6rb
+
+%URL%
+https://gitlab.freedesktop.org/ofourdan/xwayland-run
+
+%LICENSE%
+GPL-2.0-or-later
+
+%ARCH%
+any
+
+%BUILDDATE%
+1734460318
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+wlheadless-run
+xwayland-run
+xwfb-run
+
+%PROVIDES%
+wlheadless-run=0.0.4
+xwayland-run=0.0.4
+xwfb-run=0.0.4
+
+%DEPENDS%
+python
+
+%OPTDEPENDS%
+cage: Wayland compositor (no headless)
+kwin: Wayland compositor
+mutter: Wayland compositor
+weston: Wayland compositor
+xorg-xwayland: X11 server
+xorg-xauth: to run X11 clients
+
+%MAKEDEPENDS%
+git
+meson
+

@@ -1,0 +1,57 @@
+%FILENAME%
+cachyos-settings-1:1.1.9-1-any.pkg.tar.zst
+
+%NAME%
+cachyos-settings
+
+%BASE%
+cachyos-settings
+
+%VERSION%
+1:1.1.9-1
+
+%DESC%
+CachyOS - Settings
+
+%GROUPS%
+cachyos
+
+%CSIZE%
+18540
+
+%ISIZE%
+35184
+
+%SHA256SUM%
+a53b1bcf0cdfec33fd1dc2b8bd76dd5d380ae5406382574850b76a5140cd5771
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmelCqwACgkQ87YHSI2zWkdRIgv/TCOPfgfZHhgJEJkl/a22j+C/Qua5SLyWk6OW7B49Zh1G9CoHMaSdIM8LuPiO154g6hWVhchYrqAyQ3JoEYrUCwR/K6w4ofljH/gIzvGNSF2CcnL7L40HUq5udZKJhnBUmEcPcm8x2RvQfKB8nKHeKT+7Zra16TERZC1p9aKAP28eG94ggi/kW/bqa8iFsjn43S7/VbnV0VxyxAajxVzvhr6irdyyg7ZucctodNZ4DZ2eZQEywne0v0cksKm86piEZp2PJiyv/qU83hojOrLl82vME/x75d2pWj9xQG7Mbacd2wLQzca59MXfBvdNQ1kltG8CG/sVSVvoQjYe6vGoU8nRmpGJTQkUiLyd8oy9X7H1IsiZ5BUZrAKoznr5X8Qtf4QqYnDjW69Wnrl/t9oSto3Fft9aaVQfoPLblNSit7KKhb8LlUwSyWpttL20rhFWtYWO1L+B/RFn3MWw5HbFsvmoGoFqQ2Mj3Bm93Y4rs3OvYY72hwxOa8aWXn7Gjv9j
+
+%LICENSE%
+GPL-1.0-only
+
+%ARCH%
+any
+
+%BUILDDATE%
+1738869418
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+zram-generator
+ananicy-cpp
+cachyos-ananicy-rules
+inxi
+systemd>=256
+
+%OPTDEPENDS%
+libluv: for topmem
+lua-luv: for topmem
+power-profiles-daemon: For game-performance
+
+%MAKEDEPENDS%
+coreutils
+

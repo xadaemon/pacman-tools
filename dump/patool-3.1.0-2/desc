@@ -1,0 +1,59 @@
+%FILENAME%
+patool-3.1.0-2-any.pkg.tar.zst
+
+%NAME%
+patool
+
+%BASE%
+patool
+
+%VERSION%
+3.1.0-2
+
+%DESC%
+portable command line archive file manager
+
+%CSIZE%
+111516
+
+%ISIZE%
+629418
+
+%SHA256SUM%
+053f7b4bd39d3cb007f86aa3a811605ee1c3732e527b8b20d3a60d8aee3e9091
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmdhr9UACgkQ87YHSI2zWkfd7QwA6/t4RRccgxchAwEzVWuBVl66qmmckBxS/aKVldDTOAYbBRm/tyaP5OX3ldaPWWqXYd/WxG35ZBzi5QKcKn6j3lcA4AQ1XHfk88Co7XiSxfPd63nH7aLsS5IysVws8CWnjlL/6WNuNkQ7sP71CmlkoNrVdstfKrd0oslZObpFqWiF7pQ6mDyb/aZXLBrHrGAf/XXF94MOhjxjcUzz1TDUJzySpuU0y6LjfrOOVSOet7N8Zf6M4Oo4O4/Nw3rQ7tc38L/y2KL1sC5wKzYG6ARr7VUNzHgvU2l7rOCJqSdWO2MN6qV2os3C+8fr4CS3t1HArB3OrRnzSKhyFRF+tduRw/GOhdpZtynm+6dUTVJa7XWMAusXcmideaQ94/izjsz/9Ep3yrqmqMJK4r//ylV6caOkjNu2yWHfeRiIManctgZpf+0gQ7chhhi3jTAUKmwB2i5Cet+ozsN6lntiNqFqzS7kGhPZ9O5SrXXkPX6fWQTxXOC8rKpoX8mmRv5McPjQ
+
+%URL%
+https://wummel.github.io/patool/
+
+%LICENSE%
+GPL-3-only
+
+%ARCH%
+any
+
+%BUILDDATE%
+1734455249
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+python
+
+%OPTDEPENDS%
+lz4: extracting LZ4 archives
+p7zip: extracting ZIP and 7z files
+unarchiver: extracting various formats
+unrar: extracting RAR files
+zstd: extracting ZSTANDARD files
+
+%MAKEDEPENDS%
+python-build
+python-installer
+python-wheel
+python-setuptools
+python-argcomplete
+

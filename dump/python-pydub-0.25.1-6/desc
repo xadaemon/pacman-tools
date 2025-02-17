@@ -1,0 +1,60 @@
+%FILENAME%
+python-pydub-0.25.1-6-any.pkg.tar.zst
+
+%NAME%
+python-pydub
+
+%BASE%
+python-pydub
+
+%VERSION%
+0.25.1-6
+
+%DESC%
+Manipulate audio with a simple and easy high level interface
+
+%CSIZE%
+31588
+
+%ISIZE%
+112392
+
+%SHA256SUM%
+5cd4b72dd84317184cb2b112af0afaef13b1b1fb6435d24173f343e732288a7a
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmd841gACgkQ87YHSI2zWkcFyAv/aW+uDY9kMTA8i0O5Vp4JCQt8sMnqYsEjve0JzZf76wdXZZL/xUDw/J3lHMTIHupV9iFQrZCn1SZir0ZUI8inrEVHZKKSHPWiPCYtK43BM7WCrNt0vsfyL8EeqffJtWIm6gae5oc0rzzgqJAz6hfGQFnaLJmNrvr7LgAwm/p4nz44BFcF5vFJkUTQExAe9KgNx4rXXOrsxnMWHG7JpVK5UwR6qMt0eNp3Punay6Jz5nSjx+cSLMc02cNzzxLS7JXwdss2EYIQsSdolm57azS40pSN5SeMpQVntkOc05vRlq00aIDI9AmoBzMm3yq00k+4alqXdUM5m/ejt26knsYqQSePODKLQj5ePTkV1hJj6snx9TDe8jYEZI9EhM+/yrqwNBUPxmY2DuO2E6YyzroQ8Do4mKiq4dYZ8EXvRjtwFJKYTuen/3SgiDdHoggEqjzvjo0rndkDkMdakcQBGfG+uIK3vRFV4dBly2f0E7CUqHBEcAGvFEeb7vna00gw2p+Y
+
+%URL%
+https://github.com/jiaaro/pydub
+
+%LICENSE%
+MIT
+
+%ARCH%
+any
+
+%BUILDDATE%
+1736237887
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%DEPENDS%
+python-audioop-lts
+ffmpeg
+
+%OPTDEPENDS%
+python-pyaudio: for playback
+python-simpleaudio: for playback
+python-scipy: for filters support
+
+%MAKEDEPENDS%
+python-build
+python-installer
+python-setuptools
+python-wheel
+
+%CHECKDEPENDS%
+python-pytest
+

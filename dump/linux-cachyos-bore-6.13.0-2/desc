@@ -1,0 +1,73 @@
+%FILENAME%
+linux-cachyos-bore-6.13.0-2-x86_64.pkg.tar.zst
+
+%NAME%
+linux-cachyos-bore
+
+%BASE%
+linux-cachyos-bore
+
+%VERSION%
+6.13.0-2
+
+%DESC%
+The Linux BORE + Cachy Sauce scheduler Kernel by CachyOS with other patches and improvements kernel and modules
+
+%CSIZE%
+150489387
+
+%ISIZE%
+150713155
+
+%SHA256SUM%
+b65a187ec39e7c525e1cd5990cb692007a8811fee739cba1b7fbecba83fa7869
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmecktwACgkQ87YHSI2zWkfbTwwApXnj3OAjacn743LmIP7ko3vS+wEMMJ6H4C/3zVI3WHtmN4O0in6NjS2GPdytrAYlQij+wAhY4tKNziz3lMh20Qx8DTgUTWhxly/5LUnBovVu1llbOBMS+qF/RaHVFD6M9RYwSJTiNxtCwmnvnpf5IT3/0lIS4DBzMhoCVGQbm5GdurqvZaIn3hudXdmy17yxCHMzz31oReQsw5hwcZUSxEjEkIS0fKSKkhCPo4qtEakYTqsgS6eCPLb75vnZgaR1qNK6WBt8lp15ayK1Yoy6KGb02gdzfm3NeQnJnDEaDtSoqcjXAEELj3M4hMB0xUO5GaDlYOZpPr5vbjnKtEICRJE/yXQAeu/0NhQ6s7M0SM8eOM0YbWNERtHc7T6Bl5dHTEoZYddX6snlBnsvbgI3jPWZSj/0nQNkOu0SvW0zTHBy/+kaKMJQ3zCdNVerBLxQIyNtTd6i9UZlD5nEMSCnLAMeZGlzpDxI82Hx/kt63xgXES4sxUq1kMl41cGsLH24
+
+%URL%
+https://github.com/CachyOS/linux-cachyos
+
+%LICENSE%
+GPL-2.0-only
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1738313354
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%PROVIDES%
+VIRTUALBOX-GUEST-MODULES
+WIREGUARD-MODULE
+KSMBD-MODULE
+UKSMD-BUILTIN
+NTSYNC-MODULE
+
+%DEPENDS%
+coreutils
+kmod
+initramfs
+
+%OPTDEPENDS%
+wireless-regdb: to set the correct wireless channels of your country
+linux-firmware: firmware images needed for some devices
+modprobed-db: Keeps track of EVERY kernel module that has ever been probed - useful for those of us who make localmodconfig
+scx-scheds: to use sched-ext schedulers
+
+%MAKEDEPENDS%
+bc
+cpio
+gettext
+libelf
+pahole
+perl
+python
+tar
+xz
+zstd
+git
+

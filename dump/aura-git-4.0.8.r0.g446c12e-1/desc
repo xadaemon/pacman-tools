@@ -1,0 +1,69 @@
+%FILENAME%
+aura-git-4.0.8.r0.g446c12e-1-x86_64.pkg.tar.zst
+
+%NAME%
+aura-git
+
+%BASE%
+aura-git
+
+%VERSION%
+4.0.8.r0.g446c12e-1
+
+%DESC%
+A package manager for Arch Linux and its AUR
+
+%CSIZE%
+1041750
+
+%ISIZE%
+3207392
+
+%SHA256SUM%
+725dcd7fcd50d05d2843d975f9b5a9da2d071dbef5993c62b93b38c07c623258
+
+%PGPSIG%
+iQGzBAABCAAdFiEEiC3P5I4gUdSOJWKr87YHSI2zWkcFAmb8FpUACgkQ87YHSI2zWkfChAwA0QPcujIv8waJvZJsKMurZvU1vpgcdIzdGg4EMRajMOxhxVH/2MOoylIMNQd5dw0xWfz9oMAHANymJXdRlyvYxZ2S69ZFNdNZtfN51IOme48bsY4pDmVSXHU3TiP5zKagiZLG9HNWoNQU/ek6B80+NlPy7hk1UAFFXHbGaMz/fjJTCWj/B06CZYx/0qr5SfVeZMma/qePlSYo3NRTW255rJ+ZPXAS1GW/YkUk6C9ortoNEYXRCzJ1fWguyP1amQZUx78S3ZDX/IArSUBiwLvonFXS7Rt8fEN6DOKgBRwLNGexF2TjFyN/wNnRcoi6EZhe/YeVUOk7DdrurDXGKr7M2I+wfeP4cB0/mlbl1+xIbDgYjuRUDD1hZZDqWS6ObxYF6wut0Ot7vgrFUD4tKqFgD1NxtYX6br9086giY96WQAaavShdew4mkGt7W30fTQcFkIOK9BYml/1gfbom26e1NxPWGL5x+s93JBjZsxpo3LwwblLThSHmVsGm53/FopEm
+
+%URL%
+https://github.com/fosskers/aura
+
+%LICENSE%
+GPL-3.0-or-later
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1727796822
+
+%PACKAGER%
+CachyOS <admin@cachyos.org>
+
+%CONFLICTS%
+aura
+aura-bin
+aura3-bin
+
+%PROVIDES%
+aura
+
+%DEPENDS%
+git
+curl
+openssl
+gcc-libs
+glibc
+
+%OPTDEPENDS%
+bash-completion: for bash completions
+bat: more featureful file viewing
+fd: faster filesystem traversal
+graphviz: dependency graph generation
+ripgrep: faster log searches
+shellcheck: PKGBUILD scanning
+xdg-utils: for xdg-open
+
+%MAKEDEPENDS%
+cargo
+
