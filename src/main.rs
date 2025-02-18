@@ -1,9 +1,9 @@
+use clap::builder::Str;
 use clap::{Parser, Subcommand};
 use std::ffi::OsStr;
 use std::fs::File;
 use std::io::{BufReader, BufWriter, Cursor, Read};
 use std::{collections::HashMap, io, path::PathBuf};
-use clap::builder::Str;
 use thiserror::Error;
 use zstd::bulk::Decompressor;
 
@@ -25,6 +25,7 @@ struct Cli {
 enum Commands {
     /// print information about a package
     PkgInfo { pkg_name: String },
+    List {},
 }
 
 #[derive(Debug)]
@@ -44,14 +45,14 @@ pub enum ProgramError {
 #[derive(Debug)]
 struct Package {
     name: String,
-    metadata: HashMap<String, Vec<String>>
+    metadata: HashMap<String, Vec<String>>,
 }
 
 #[derive(Debug)]
 struct Database {
     file: PathBuf,
     signed: bool,
-    packages: Box<HashMap<String, Package>>,
+    packages: HashMap<String, Package>,
 }
 
 impl Database {
@@ -91,7 +92,7 @@ impl Database {
         Ok(Database {
             file: pth,
             signed: false,
-            packages: Box::from(HashMap::new()),
+            packages,
         })
     }
 
@@ -105,6 +106,7 @@ impl Database {
             if line.starts_with("%") {
                 if inside_block {
                     metadata.insert(key.clone(), val.clone());
+                    val.clear();
                 }
                 inside_block = true;
                 let striped = line.replace("%", "");
@@ -139,10 +141,16 @@ fn main() -> Result<()> {
         Some(Commands::PkgInfo { pkg_name }) => {
             println!("Lookup package {}", pkg_name);
             lookup(pkg_name.into(), &pst)?;
-        }
+        },
+        Some(Commands::List {}) => {
+            let db = Database::open(pst.db.clone().unwrap().clone())?;
+            for (k, _) in db.packages {
+                println!("{}", k);
+            }
+        },
         None => println!("This tool requires a subcommand, call with -h to see options"),
     }
-    
+
     Ok(())
 }
 
@@ -150,8 +158,13 @@ fn lookup(pkg_name: String, pst: &ProgState) -> Result<()> {
     let db = Database::open(pst.db.clone().unwrap().clone())?;
     let pkg = db.packages.get(&pkg_name);
     if let Some(package) = pkg {
-        
+        println!("Found package {}", pkg_name);
+        for (k,v) in &package.metadata {
+            println!("{}, {:?}", k, v);
+        }
+    } else {
+        println!("Package not found")
     }
-    
+
     Ok(())
 }
