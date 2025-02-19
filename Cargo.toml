@@ -9,3 +9,4 @@ clap = { version = "4.5.28", features = ["cargo", "derive", "env", "string", "un
 tar = "0.4.43"
 thiserror = "2.0.11"
 zstd = "0.13.2"
+log = "0.4.25"

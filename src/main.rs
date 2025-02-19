@@ -4,8 +4,10 @@ use std::ffi::OsStr;
 use std::fs::File;
 use std::io::{BufReader, BufWriter, Cursor, Read};
 use std::{collections::HashMap, io, path::PathBuf};
+use std::path::Path;
 use thiserror::Error;
 use zstd::bulk::Decompressor;
+use log::warn;
 
 type Result<T> = std::result::Result<T, ProgramError>;
 
@@ -24,13 +26,15 @@ struct Cli {
 #[derive(Debug, Subcommand)]
 enum Commands {
     /// print information about a package
-    PkgInfo { pkg_name: String },
+    PkgInfo {
+        pkg_name: String,
+    },
     List {},
 }
 
 #[derive(Debug)]
-struct ProgState {
-    db: Option<PathBuf>,
+struct State {
+    db: Option<Box<Path>>,
     debug_lvl: u8,
 }
 
@@ -56,9 +60,9 @@ struct Database {
 }
 
 impl Database {
-    fn open(pth: PathBuf) -> Result<Self> {
+    fn open(pth: &Path) -> Result<Self> {
         if !pth.try_exists()? {
-            return Err(ProgramError::ENOF(pth));
+            return Err(ProgramError::ENOF(pth.to_path_buf()))
         }
 
         let rdr = File::open(&pth)?;
@@ -90,7 +94,7 @@ impl Database {
         }
 
         Ok(Database {
-            file: pth,
+            file: pth.to_path_buf(),
             signed: false,
             packages,
         })
@@ -126,45 +130,69 @@ impl Database {
 fn main() -> Result<()> {
     let cli = Cli::parse();
 
-    let db = if cli.db.is_some() {
-        Some(cli.db.as_deref().unwrap().to_path_buf())
-    } else {
-        None
-    };
-
-    let pst = ProgState {
-        db,
+    let pst = State {
+        db: if cli.db.is_some() {
+            Some(Box::from(cli.db.unwrap().as_path()))
+        } else {
+            None
+        },
         debug_lvl: cli.debug.unwrap_or(0),
     };
 
     match &cli.command {
         Some(Commands::PkgInfo { pkg_name }) => {
-            println!("Lookup package {}", pkg_name);
             lookup(pkg_name.into(), &pst)?;
-        },
+        }
         Some(Commands::List {}) => {
-            let db = Database::open(pst.db.clone().unwrap().clone())?;
+            let db = Database::open(pst.db.unwrap().as_ref())?;
             for (k, _) in db.packages {
                 println!("{}", k);
             }
-        },
+        }
         None => println!("This tool requires a subcommand, call with -h to see options"),
     }
 
     Ok(())
 }
 
-fn lookup(pkg_name: String, pst: &ProgState) -> Result<()> {
-    let db = Database::open(pst.db.clone().unwrap().clone())?;
-    let pkg = db.packages.get(&pkg_name);
-    if let Some(package) = pkg {
-        println!("Found package {}", pkg_name);
-        for (k,v) in &package.metadata {
-            println!("{}, {:?}", k, v);
-        }
-    } else {
-        println!("Package not found")
-    }
+fn lookup(pkg_name: String, pst: &State) -> Result<()> {
+    let dbs = if pst.db.is_none() {
+        // List all db files in /var/lib/pacman/sync
+        let path = PathBuf::from("/var/lib/pacman/sync");
+        let entries = path.read_dir()?;
+        let mut dbs = Vec::new();
+        for entry in entries {
+            let entry = entry?;
 
+            let metadata = entry.metadata()?;
+            if !metadata.is_file() || entry.path().extension().unwrap() != "db" {
+                continue;
+            }
+
+            dbs.push(entry.path());
+        }
+        dbs
+    } else {
+        vec![pst.db.clone().unwrap().to_path_buf()]
+    };
+
+    for db_file in dbs {
+        let db = match Database::open(&db_file) {
+            Ok(db) => db,
+            Err(e) => {
+                println!("Error {} at db {}", e, db_file.display());
+                return Err(e)
+            }
+        };
+        let pkg = db.packages.get(&pkg_name);
+        if let Some(package) = pkg {
+            println!("Found package {} in db {}", pkg_name, db_file.display());
+            for (k, v) in &package.metadata {
+                println!("{}, {:?}", k, v);
+            }
+            return Ok(())
+        } 
+    }
+    println!("Package not found");
     Ok(())
 }
