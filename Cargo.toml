@@ -2,11 +2,11 @@
 name = "pacman-db-tools"
 version = "0.1.0"
 edition = "2021"
+license = "Apache-2.0"
+license-file = "LICENSE"
 
 [dependencies]
-bytes = "1.10.0"
 clap = { version = "4.5.28", features = ["cargo", "derive", "env", "string", "unicode"] }
 tar = "0.4.43"
 thiserror = "2.0.11"
 zstd = "0.13.2"
-log = "0.4.25"

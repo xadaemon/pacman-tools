@@ -2,13 +2,14 @@ use clap::{Parser, Subcommand};
 use std::io::Read;
 use std::path::Path;
 use std::{io, path::PathBuf};
+use clap::builder::Str;
 use thiserror::Error;
 
 mod db;
 mod actions;
 
 use db::database::Database;
-use crate::actions::lookup;
+use crate::actions::{list_all, lookup};
 
 type Result<T> = std::result::Result<T, ProgramError>;
 
@@ -29,6 +30,7 @@ enum Commands {
     /// print information about a package
     PkgInfo {
         pkg_name: String,
+        key_names: Option<Vec<String>>,
     },
     List {},
 }
@@ -60,18 +62,14 @@ fn main() -> Result<()> {
     };
 
     match &cli.command {
-        Some(Commands::PkgInfo { pkg_name }) => {
-            lookup(pkg_name.into(), &pst)?;
+        Some(Commands::PkgInfo { pkg_name ,key_names}) => {
+            lookup(pkg_name.into(), key_names, &pst)?;
         }
         Some(Commands::List {}) => {
-            let db = Database::open(pst.db.unwrap().as_ref())?;
-            for k in db.packages().keys() {
-                println!("{}", k);
-            }
+            list_all(&pst)?;
         }
         None => {
             println!("This tool requires a subcommand, call with -h to see options");
-            
         },
     }
 

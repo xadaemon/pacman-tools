@@ -25,7 +25,7 @@ fn db_list(pst: &State) -> Result<Vec<PathBuf>> {
     }
 }
 
-pub fn lookup(pkg_name: String, pst: &State) -> crate::Result<()> {
+pub fn lookup(pkg_name: String, key_names: &Option<Vec<String>>, pst: &State) -> Result<()> {
     let dbs = db_list(pst)?;
     
     for db_file in dbs {
@@ -38,13 +38,36 @@ pub fn lookup(pkg_name: String, pst: &State) -> crate::Result<()> {
         };
         let pkg = db.lookup(&pkg_name);
         if let Some(package) = pkg {
-            println!("Found package {} in db {}", pkg_name, db_file.display());
-            for (k, v) in package.metadata() {
-                println!("{}, {:?}", k, v);
+            if let Some(keys) = key_names {
+                for k in keys {
+                    if let Some(lines) = package.metadata().get(k) {
+                        for line in lines {
+                            println!("{}", line);
+                        }
+                    }
+                }
+            } else {
+                println!("Found package {} in db {}", pkg_name, db_file.display());
+                for (k, v) in package.metadata() {
+                    println!("{}, {:?}", k, v);
+                }
             }
             return Ok(())
         }
     }
     println!("Package not found");
+    Ok(())
+}
+
+pub fn list_all(pst: &State) -> Result<()> {
+    let dbs = db_list(pst)?;
+    
+    for db_file in dbs {
+        let db = Database::open(&db_file)?;
+        for pkg in db.packages().keys() {
+            println!("{}", pkg);
+        }
+    }
+    
     Ok(())
 }
