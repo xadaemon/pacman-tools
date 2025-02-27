@@ -1,14 +1,11 @@
 use clap::{Parser, Subcommand};
-use std::io::Read;
 use std::path::Path;
 use std::{io, path::PathBuf};
-use clap::builder::Str;
 use thiserror::Error;
 
-mod db;
 mod actions;
+mod db;
 
-use db::database::Database;
 use crate::actions::{list_all, lookup};
 
 type Result<T> = std::result::Result<T, ProgramError>;
@@ -17,8 +14,12 @@ type Result<T> = std::result::Result<T, ProgramError>;
 #[command(version, about, long_about = None)]
 struct Cli {
     /// force a db file to be used
+    #[arg(long)]
     db: Option<PathBuf>,
-    /// Print debug info
+    /// override the path that is used for lookups
+    #[arg(long)]
+    db_dir: Option<PathBuf>,
+    /// print debug info
     #[arg(short, long, action = clap::ArgAction::Count)]
     debug: Option<u8>,
     #[command(subcommand)]
@@ -38,6 +39,7 @@ enum Commands {
 #[derive(Debug)]
 struct State {
     db: Option<Box<Path>>,
+    db_dir: Option<Box<Path>>,
     debug_lvl: u8,
 }
 
@@ -58,11 +60,19 @@ fn main() -> Result<()> {
         } else {
             None
         },
+        db_dir: if cli.db_dir.is_some() {
+            Some(Box::from(cli.db_dir.unwrap().as_path()))
+        } else {
+            None
+        },
         debug_lvl: cli.debug.unwrap_or(0),
     };
 
     match &cli.command {
-        Some(Commands::PkgInfo { pkg_name ,key_names}) => {
+        Some(Commands::PkgInfo {
+            pkg_name,
+            key_names,
+        }) => {
             lookup(pkg_name.into(), key_names, &pst)?;
         }
         Some(Commands::List {}) => {
@@ -70,7 +80,7 @@ fn main() -> Result<()> {
         }
         None => {
             println!("This tool requires a subcommand, call with -h to see options");
-        },
+        }
     }
 
     Ok(())

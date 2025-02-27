@@ -7,6 +7,7 @@ license-file = "LICENSE"
 
 [dependencies]
 clap = { version = "4.5.28", features = ["cargo", "derive", "env", "string", "unicode"] }
+flate2 = { version = "1.1.0", features = ["zlib-rs"] }
 tar = "0.4.43"
 thiserror = "2.0.11"
 zstd = "0.13.2"

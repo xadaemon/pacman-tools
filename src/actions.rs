@@ -1,12 +1,16 @@
-use std::path::PathBuf;
 use crate::db::database::Database;
-use crate::State;
 use crate::Result;
+use crate::State;
+use std::path::PathBuf;
 
 fn db_list(pst: &State) -> Result<Vec<PathBuf>> {
     if pst.db.is_none() {
         // List all db files in /var/lib/pacman/sync
-        let path = PathBuf::from("/var/lib/pacman/sync");
+        let path = if let Some(dir) = &pst.db_dir {
+            PathBuf::from(dir.clone())
+        } else {
+            PathBuf::from("/var/lib/pacman/sync")
+        };
         let entries = path.read_dir()?;
         let mut dbs = Vec::new();
         for entry in entries {
@@ -27,13 +31,13 @@ fn db_list(pst: &State) -> Result<Vec<PathBuf>> {
 
 pub fn lookup(pkg_name: String, key_names: &Option<Vec<String>>, pst: &State) -> Result<()> {
     let dbs = db_list(pst)?;
-    
+
     for db_file in dbs {
         let db = match Database::open(&db_file) {
             Ok(db) => db,
             Err(e) => {
                 println!("Error {} at db {}", e, db_file.display());
-                return Err(e)
+                return Err(e);
             }
         };
         let pkg = db.lookup(&pkg_name);
@@ -52,7 +56,7 @@ pub fn lookup(pkg_name: String, key_names: &Option<Vec<String>>, pst: &State) ->
                     println!("{}, {:?}", k, v);
                 }
             }
-            return Ok(())
+            return Ok(());
         }
     }
     println!("Package not found");
@@ -61,13 +65,13 @@ pub fn lookup(pkg_name: String, key_names: &Option<Vec<String>>, pst: &State) ->
 
 pub fn list_all(pst: &State) -> Result<()> {
     let dbs = db_list(pst)?;
-    
+
     for db_file in dbs {
         let db = Database::open(&db_file)?;
         for pkg in db.packages().keys() {
             println!("{}", pkg);
         }
     }
-    
+
     Ok(())
 }
