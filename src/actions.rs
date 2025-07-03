@@ -1,6 +1,6 @@
-use crate::db::database::Database;
 use crate::Result;
 use crate::State;
+use pacman_db_util::database::Database;
 use std::path::PathBuf;
 
 fn db_list(pst: &State) -> Result<Vec<PathBuf>> {
@@ -68,10 +68,28 @@ pub fn list_all(pst: &State) -> Result<()> {
 
     for db_file in dbs {
         let db = Database::open(&db_file)?;
+        println!(
+            "database: {}",
+            db.file().file_name().unwrap().to_string_lossy()
+        );
         for pkg in db.packages().keys() {
             println!("{}", pkg);
         }
     }
+
+    Ok(())
+}
+
+#[cfg(feature = "serde-types")]
+pub fn all_to_json(pst: &State) -> Result<()> {
+    let dbs = db_list(pst)?;
+    let mut pkgs = Vec::<Database>::new();
+    for db_file in dbs {
+        let db = Database::open(&db_file)?;
+        pkgs.push(db);
+    }
+
+    println!("{}", serde_json::to_string(&pkgs).unwrap());
 
     Ok(())
 }

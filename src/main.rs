@@ -1,14 +1,15 @@
 use clap::{Parser, Subcommand};
 use std::path::Path;
-use std::{io, path::PathBuf};
-use thiserror::Error;
+use std::path::PathBuf;
+use pacman_db_util::ProgramError;
 
 mod actions;
-mod db;
-
-use crate::actions::{list_all, lookup};
 
 type Result<T> = std::result::Result<T, ProgramError>;
+
+use crate::actions::all_to_json;
+use crate::actions::{list_all, lookup};
+
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
@@ -34,22 +35,15 @@ enum Commands {
         key_names: Option<Vec<String>>,
     },
     List {},
+    JsonList {},
 }
 
 #[derive(Debug)]
 struct State {
     db: Option<Box<Path>>,
     db_dir: Option<Box<Path>>,
-    debug_lvl: u8,
 }
 
-#[derive(Error, Debug)]
-pub enum ProgramError {
-    #[error("An io Error occurred {0}")]
-    EIO(#[from] io::Error),
-    #[error("File {0} not found")]
-    ENOF(PathBuf),
-}
 
 fn main() -> Result<()> {
     let cli = Cli::parse();
@@ -65,7 +59,6 @@ fn main() -> Result<()> {
         } else {
             None
         },
-        debug_lvl: cli.debug.unwrap_or(0),
     };
 
     match &cli.command {
@@ -77,7 +70,10 @@ fn main() -> Result<()> {
         }
         Some(Commands::List {}) => {
             list_all(&pst)?;
-        }
+        },
+        Some(Commands::JsonList {}) => {
+            all_to_json(&pst)?;
+        },
         None => {
             println!("This tool requires a subcommand, call with -h to see options");
         }
